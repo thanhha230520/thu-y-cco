@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán - Pet Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Pet Shop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="checkout.html">Thanh toán</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Thanh toán đơn hàng</h2>
+
+        <div id="order-summary">
+            <h3>Thông tin đơn hàng</h3>
+            <div id="cart-items"></div>
+            <p id="total-price">Tổng: 0 VNĐ</p>
+        </div>
+
+        <form id="checkout-form">
+            <h3>Chọn hình thức thanh toán</h3>
+            <label>
+                <input type="radio" name="payment-method" value="cash" required>
+                Thanh toán tiền mặt (COD)
+            </label><br>
+            <label>
+                <input type="radio" name="payment-method" value="bank">
+                Chuyển khoản ngân hàng
+            </label><br>
+            <label>
+                <input type="radio" name="payment-method" value="momo">
+                Thanh toán qua Momo
+            </label><br><br>
+
+            <div id="bank-details" style="display: none;">
+                <p><strong>Ngân hàng:</strong> Vietcombank</p>
+                <p><strong>Số tài khoản:</strong> 0123456789</p>
+                <p><strong>Chủ tài khoản:</strong> PETSHOP CO., LTD</p>
+            </div>
+
+            <div id="momo-details" style="display: none;">
+                <p><strong>Momo:</strong> 0909123456</p>
+                <p><strong>Tên tài khoản:</strong> Pet Shop</p>
+                <img src="momo-qr.png" alt="QR Momo" style="width:150px;">
+            </div>
+
+            <button type="submit">Xác nhận thanh toán</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pet Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Hiển thị giỏ hàng
+        function displayCart() {
+            let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+            let cartContainer = document.getElementById('cart-items');
+            let totalPrice = 0;
+
+            if (cartItems.length > 0) {
+                cartContainer.innerHTML = cartItems.map(item => {
+                    totalPrice += parseInt(item.price);
+                    return `<p>${item.name} - ${item.price} VNĐ</p>`;
+                }).join('');
+            } else {
+                cartContainer.innerHTML = '<p>Giỏ hàng trống.</p>';
+            }
+            document.getElementById('total-price').innerText = `Tổng: ${totalPrice} VNĐ`;
+        }
+
+        // Hiển thị thông tin thanh toán
+        document.querySelectorAll('input[name="payment-method"]').forEach(input => {
+            input.addEventListener('change', function () {
+                document.getElementById('bank-details').style.display = this.value === 'bank' ? 'block' : 'none';
+                document.getElementById('momo-details').style.display = this.value === 'momo' ? 'block' : 'none';
+            });
+        });
+
+        // Xác nhận thanh toán
+        document.getElementById('checkout-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Cảm ơn bạn đã thanh toán! Đơn hàng của bạn đang được xử lý.');
+            localStorage.removeItem('cart'); // Xóa giỏ hàng sau khi thanh toán
+            window.location.href = 'index.html'; // Quay lại trang chủ
+        });
+
+        // Gọi hàm hiển thị giỏ hàng
+        displayCart();
+    </script>
+</body>
+
+</html>
