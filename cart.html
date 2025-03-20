@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - Pet Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Pet Shop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="checkout.html">Thanh toán</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Giỏ hàng của bạn</h2>
+        <div id="cart-items"></div>
+        <button onclick="clearCart()">Xóa giỏ hàng</button>
+        <a href="checkout.html">Tiến hành thanh toán</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pet Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function displayCart() {
+            let cartItems = JSON.parse(localStorage.getItem('cart'));
+            let cartContainer = document.getElementById('cart-items');
+            if (cartItems && cartItems.length > 0) {
+                cartContainer.innerHTML = cartItems.map(item => `
+                    <p>${item.name} - ${item.price} VNĐ</p>
+                `).join('');
+            } else {
+                cartContainer.innerHTML = '<p>Giỏ hàng trống.</p>';
+            }
+        }
+
+        function clearCart() {
+            localStorage.removeItem('cart');
+            displayCart();
+        }
+
+        displayCart();
+    </script>
+</body>
+</html>
