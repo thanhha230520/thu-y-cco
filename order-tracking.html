@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra cứu đơn hàng - Pet Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pet Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="order-tracking.html">Tra cứu đơn hàng</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Tra cứu đơn hàng</h2>
+        <form id="tracking-form">
+            <label for="order-id">Nhập mã đơn hàng:</label><br>
+            <input type="text" id="order-id" required placeholder="Ví dụ: PET1234"><br><br>
+            <button type="submit">Tra cứu</button>
+        </form>
+
+        <div id="order-details" style="display: none; margin-top: 20px;"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pet Shop</p>
+    </footer>
+
+    <script>
+        document.getElementById('tracking-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const orderId = document.getElementById('order-id').value.trim();
+            const savedOrder = JSON.parse(localStorage.getItem(orderId));
+
+            if (savedOrder) {
+                document.getElementById('order-details').style.display = 'block';
+                document.getElementById('order-details').innerHTML = `
+                    <h3>Thông tin đơn hàng: ${orderId}</h3>
+                    <p><strong>Khách hàng:</strong> ${savedOrder.customer}</p>
+                    <p><strong>Phương thức thanh toán:</strong> ${savedOrder.payment}</p>
+                    <p><strong>Tổng tiền:</strong> ${savedOrder.total} VNĐ</p>
+                    <p><strong>Sản phẩm:</strong></p>
+                    <ul>${savedOrder.items.map(item => `<li>${item.name} - ${item.price} VNĐ</li>`).join('')}</ul>
+                `;
+            } else {
+                alert("Không tìm thấy đơn hàng!");
+            }
+        });
+    </script>
+</body>
+
+</html>
