@@ -1,56 +1,169 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Shop</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS cho popup */
+        #popup {
+            display: none;
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border: 2px solid green;
+            border-radius: 8px;
+            z-index: 999;
+        }
+    </style>
 </head>
+
 <body>
+    <!-- Banner -->
     <header>
-        <div class="logo">
-            <h1>Pet Shop Bảo Trâm</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="products.html">Sản phẩm</a></li>
-                <li><a href="cart.html">Giỏ hàng</a></li>
-                <li><a href="checkout.html">Thanh toán</a></li>
-                <li><a href="checkout.html">Tra cứu đơn hàng</a></li>
-                <li><a href="checkout.html">Đăng nhập</a></li> 
-            </ul>
-        </nav>
+        <h1>Chào mừng đến Pet Shop</h1>
     </header>
 
-    <main>
-        <section class="hero">
-            <h2>Chào mừng đến với Pet Shop</h2>
-            <p>Mua sắm các sản phẩm thú cưng yêu thích tại cửa hàng của chúng tôi!</p>
-        </section>
+    <!-- Sản phẩm -->
+    <section>
+        <h2>Sản phẩm nổi bật</h2>
+        <!-- Danh sách sản phẩm -->
+    </section>
 
-        <section class="featured-products">
-            <h3>Sản phẩm nổi bật</h3>
-            <div class="product-list">
-                <div class="product">
-                    <img src="pet1.jpg" alt="Sản phẩm 1">
-                    <h4>Thức ăn cho mèo</h4>
-                    <p>Giá: 150,000 VNĐ</p>
-                    <button onclick="addToCart('Thức ăn cho mèo', 150000)">Thêm vào giỏ hàng</button>
-                </div>
-                <div class="product">
-                    <img src="pet2.jpg" alt="Sản phẩm 2">
-                    <h4>Chó nhồi bông</h4>
-                    <p>Giá: 200,000 VNĐ</p>
-                    <button onclick="addToCart('Chó nhồi bông', 200000)">Thêm vào giỏ hàng</button>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- Tra cứu đơn hàng -->
+    <section>
+        <h2>Tra cứu đơn hàng</h2>
+        <form id="tracking-form">
+            <input type="text" id="order-id-input" placeholder="Nhập mã đơn hàng..." required>
+            <button type="submit">Tra cứu</button>
+        </form>
 
+        <div id="order-result" style="margin-top:20px; display:none; border:1px solid #ccc; padding:15px; border-radius:8px;">
+            <h3>Chi tiết đơn hàng:</h3>
+            <p><strong>Khách hàng:</strong> <span id="result-customer"></span></p>
+            <p><strong>Thanh toán:</strong> <span id="result-payment"></span></p>
+            <p><strong>Tổng tiền:</strong> <span id="result-total"></span></p>
+            <p><strong>Sản phẩm:</strong></p>
+            <ul id="result-items"></ul>
+
+            <button id="save-order" style="margin-top:10px; background:green; color:#fff; padding:5px 10px; border:none; border-radius:5px;">Lưu chỉnh sửa</button>
+            <button id="print-order" style="margin-top:10px; background:blue; color:#fff; padding:5px 10px; border:none; border-radius:5px;">In hóa đơn</button>
+            <button id="delete-order" style="margin-top:10px; background:red; color:#fff; padding:5px 10px; border:none; border-radius:5px;">Xóa đơn hàng</button>
+        </div>
+
+        <!-- Popup -->
+        <div id="popup">
+            <p id="popup-message"></p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Pet Shop - Tất cả quyền lợi thuộc về cửa hàng</p>
+        <p>© 2025 Pet Shop - Hotline: 0123 456 789</p>
     </footer>
- </form>
+
+    <script>
+        let currentOrderId = '';
+        let currentOrder = null;
+
+        document.getElementById('tracking-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const orderId = document.getElementById('order-id-input').value.trim();
+            const order = JSON.parse(localStorage.getItem(orderId));
+
+            const resultBox = document.getElementById('order-result');
+            const itemList = document.getElementById('result-items');
+
+            if (order) {
+                currentOrderId = orderId;
+                currentOrder = order;
+                document.getElementById('result-customer').innerText = order.customer;
+                document.getElementById('result-payment').innerText = order.payment;
+                renderOrderItems();
+                updateTotal();
+                resultBox.style.display = 'block';
+            } else {
+                showPopup('Không tìm thấy đơn hàng!');
+                resultBox.style.display = 'none';
+            }
+        });
+
+        function renderOrderItems() {
+            const itemList = document.getElementById('result-items');
+            itemList.innerHTML = '';
+            currentOrder.items.forEach((item, index) => {
+                const qty = item.qty || 1;
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    ${item.name} - <span>${parseInt(item.price).toLocaleString()}</span> VND - 
+                    SL: <span id="qty-${index}">${qty}</span>
+                    <button onclick="changeQty(${index}, 1)">+</button>
+                    <button onclick="changeQty(${index}, -1)">-</button>
+                `;
+                itemList.appendChild(li);
+            });
+        }
+
+        function changeQty(index, delta) {
+            if (!currentOrder) return;
+            currentOrder.items[index].qty = (currentOrder.items[index].qty || 1) + delta;
+            if (currentOrder.items[index].qty < 1) currentOrder.items[index].qty = 1;
+            renderOrderItems();
+            updateTotal();
+        }
+
+        function updateTotal() {
+            const total = currentOrder.items.reduce((sum, item) => sum + (parseInt(item.price) * (item.qty || 1)), 0);
+            document.getElementById('result-total').innerText = total.toLocaleString() + ' VND';
+        }
+
+        document.getElementById('save-order').addEventListener('click', function () {
+            if (currentOrderId && currentOrder) {
+                localStorage.setItem(currentOrderId, JSON.stringify(currentOrder));
+                showPopup('Đã lưu thay đổi đơn hàng!');
+            }
+        });
+
+        document.getElementById('delete-order').addEventListener('click', function () {
+            if (currentOrderId && confirm('Bạn có chắc muốn xóa đơn hàng này?')) {
+                localStorage.removeItem(currentOrderId);
+                showPopup('Đã xóa đơn hàng!');
+                document.getElementById('order-result').style.display = 'none';
+            }
+        });
+
+        document.getElementById('print-order').addEventListener('click', function () {
+            if (currentOrderId && currentOrder) {
+                let content = `
+                    --- HÓA ĐƠN --- \n
+                    Khách hàng: ${currentOrder.customer}\n
+                    Thanh toán: ${currentOrder.payment}\n
+                    Sản phẩm:\n
+                `;
+                currentOrder.items.forEach(item => {
+                    content += `- ${item.name} | SL: ${item.qty || 1} | ${parseInt(item.price).toLocaleString()} VND\n`;
+                });
+                content += `\nTổng tiền: ${document.getElementById('result-total').innerText}\n`;
+                const printWindow = window.open('', '', 'width=600,height=400');
+                printWindow.document.write(`<pre>${content}</pre>`);
+                printWindow.document.close();
+                printWindow.print();
+            }
+        });
+
+        function showPopup(message) {
+            document.getElementById('popup-message').innerText = message;
+            document.getElementById('popup').style.display = 'block';
+        }
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
 </body>
+
 </html>
