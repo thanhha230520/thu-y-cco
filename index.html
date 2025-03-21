@@ -1,58 +1,68 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Shop</title>
     <style>
-        /* CSS cho popup */
-        #popup {
-            display: none;
-            position: fixed;
-            top: 30%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: white;
-            padding: 20px;
-            border: 2px solid green;
-            border-radius: 8px;
-            z-index: 999;
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header, footer { background: #f5a623; color: white; text-align: center; padding: 20px 0; }
+        section { padding: 20px; }
+        .product { border: 1px solid #ccc; padding: 10px; border-radius: 6px; margin: 10px 0; transition: 0.3s; }
+        .product:hover { box-shadow: 0 0 10px rgba(0,0,0,0.2); }
+        button { padding: 5px 10px; margin-top: 5px; cursor: pointer; transition: 0.3s; }
+        button:hover { background: #f5a623; color: white; }
+        .cart { background: #eee; padding: 10px; margin-bottom: 20px; }
+        .cart-item { margin-bottom: 5px; }
+        .hidden { display: none; }
+        #popup { display: none; position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border: 2px solid green; border-radius: 8px; z-index: 999; }
     </style>
 </head>
-
 <body>
-    <!-- Banner -->
+
+    <!-- Header -->
     <header>
-        <h1>Chào mừng đến Pet Shop</h1>
+        <h1>🐾 Pet Shop</h1>
+        <p>Chăm sóc thú cưng tận tâm</p>
     </header>
+
+    <!-- Giỏ hàng -->
+    <section class="cart">
+        <h3>🛒 Giỏ hàng</h3>
+        <div id="cart-items"></div>
+        <p><strong>Tổng tiền:</strong> <span id="cart-total">0</span> VND</p>
+        <button onclick="checkout()">Thanh toán</button>
+    </section>
 
     <!-- Sản phẩm -->
     <section>
         <h2>Sản phẩm nổi bật</h2>
-        <!-- Danh sách sản phẩm -->
+        <div class="product">
+            <h3>Thức ăn cho chó</h3>
+            <p>Giá: 100000 VND</p>
+            <button onclick="addToCart('Thức ăn cho chó', 100000)">Thêm vào giỏ</button>
+        </div>
+        <div class="product">
+            <h3>Phụ kiện cho mèo</h3>
+            <p>Giá: 50000 VND</p>
+            <button onclick="addToCart('Phụ kiện cho mèo', 50000)">Thêm vào giỏ</button>
+        </div>
     </section>
 
     <!-- Tra cứu đơn hàng -->
     <section>
-        <h2>Tra cứu đơn hàng</h2>
+        <h2>🔍 Tra cứu đơn hàng</h2>
         <form id="tracking-form">
             <input type="text" id="order-id-input" placeholder="Nhập mã đơn hàng..." required>
             <button type="submit">Tra cứu</button>
         </form>
 
-        <div id="order-result" style="margin-top:20px; display:none; border:1px solid #ccc; padding:15px; border-radius:8px;">
+        <div id="order-result" class="hidden" style="margin-top:20px; border:1px solid #ccc; padding:15px; border-radius:8px;">
             <h3>Chi tiết đơn hàng:</h3>
-            <p><strong>Khách hàng:</strong> <span id="result-customer"></span></p>
-            <p><strong>Thanh toán:</strong> <span id="result-payment"></span></p>
+            <p><strong>Khách hàng:</strong> Khách lẻ</p>
+            <p><strong>Thanh toán:</strong> Tiền mặt</p>
             <p><strong>Tổng tiền:</strong> <span id="result-total"></span></p>
-            <p><strong>Sản phẩm:</strong></p>
             <ul id="result-items"></ul>
-
-            <button id="save-order" style="margin-top:10px; background:green; color:#fff; padding:5px 10px; border:none; border-radius:5px;">Lưu chỉnh sửa</button>
-            <button id="print-order" style="margin-top:10px; background:blue; color:#fff; padding:5px 10px; border:none; border-radius:5px;">In hóa đơn</button>
-            <button id="delete-order" style="margin-top:10px; background:red; color:#fff; padding:5px 10px; border:none; border-radius:5px;">Xóa đơn hàng</button>
         </div>
 
         <!-- Popup -->
@@ -67,95 +77,86 @@
         <p>© 2025 Pet Shop - Hotline: 0123 456 789</p>
     </footer>
 
+    <!-- Script -->
     <script>
-        let currentOrderId = '';
-        let currentOrder = null;
+        const cart = [];
 
+        function addToCart(name, price) {
+            const existing = cart.find(item => item.name === name);
+            if (existing) {
+                existing.qty++;
+            } else {
+                cart.push({ name, price, qty: 1 });
+            }
+            renderCart();
+        }
+
+        function renderCart() {
+            const cartItems = document.getElementById('cart-items');
+            cartItems.innerHTML = '';
+            let total = 0;
+            cart.forEach((item, index) => {
+                total += item.price * item.qty;
+                cartItems.innerHTML += `
+                    <div class="cart-item">
+                        ${item.name} - ${item.price} VND x ${item.qty}
+                        <button onclick="changeQty(${index}, 1)">+</button>
+                        <button onclick="changeQty(${index}, -1)">-</button>
+                        <button onclick="removeItem(${index})">Xóa</button>
+                    </div>
+                `;
+            });
+            document.getElementById('cart-total').innerText = total.toLocaleString();
+        }
+
+        function changeQty(index, delta) {
+            cart[index].qty += delta;
+            if (cart[index].qty <= 0) cart.splice(index, 1);
+            renderCart();
+        }
+
+        function removeItem(index) {
+            cart.splice(index, 1);
+            renderCart();
+        }
+
+        function checkout() {
+            if (cart.length === 0) {
+                showPopup('Giỏ hàng trống!');
+                return;
+            }
+            const orderId = 'DH' + Date.now();
+            const order = { customer: 'Khách lẻ', payment: 'Tiền mặt', items: cart, total: calcTotal() };
+            localStorage.setItem(orderId, JSON.stringify(order));
+            cart.length = 0;
+            renderCart();
+            showPopup(`Đã thanh toán thành công! Mã đơn: ${orderId}`);
+        }
+
+        function calcTotal() {
+            return cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+        }
+
+        // Tra cứu đơn
         document.getElementById('tracking-form').addEventListener('submit', function (e) {
             e.preventDefault();
             const orderId = document.getElementById('order-id-input').value.trim();
             const order = JSON.parse(localStorage.getItem(orderId));
-
-            const resultBox = document.getElementById('order-result');
-            const itemList = document.getElementById('result-items');
-
             if (order) {
-                currentOrderId = orderId;
-                currentOrder = order;
-                document.getElementById('result-customer').innerText = order.customer;
-                document.getElementById('result-payment').innerText = order.payment;
-                renderOrderItems();
-                updateTotal();
-                resultBox.style.display = 'block';
+                document.getElementById('result-total').innerText = order.total.toLocaleString() + ' VND';
+                const list = document.getElementById('result-items');
+                list.innerHTML = '';
+                order.items.forEach(item => {
+                    list.innerHTML += `<li>${item.name} | SL: ${item.qty} | ${item.price.toLocaleString()} VND</li>`;
+                });
+                document.getElementById('order-result').classList.remove('hidden');
             } else {
                 showPopup('Không tìm thấy đơn hàng!');
-                resultBox.style.display = 'none';
+                document.getElementById('order-result').classList.add('hidden');
             }
         });
 
-        function renderOrderItems() {
-            const itemList = document.getElementById('result-items');
-            itemList.innerHTML = '';
-            currentOrder.items.forEach((item, index) => {
-                const qty = item.qty || 1;
-                const li = document.createElement('li');
-                li.innerHTML = `
-                    ${item.name} - <span>${parseInt(item.price).toLocaleString()}</span> VND - 
-                    SL: <span id="qty-${index}">${qty}</span>
-                    <button onclick="changeQty(${index}, 1)">+</button>
-                    <button onclick="changeQty(${index}, -1)">-</button>
-                `;
-                itemList.appendChild(li);
-            });
-        }
-
-        function changeQty(index, delta) {
-            if (!currentOrder) return;
-            currentOrder.items[index].qty = (currentOrder.items[index].qty || 1) + delta;
-            if (currentOrder.items[index].qty < 1) currentOrder.items[index].qty = 1;
-            renderOrderItems();
-            updateTotal();
-        }
-
-        function updateTotal() {
-            const total = currentOrder.items.reduce((sum, item) => sum + (parseInt(item.price) * (item.qty || 1)), 0);
-            document.getElementById('result-total').innerText = total.toLocaleString() + ' VND';
-        }
-
-        document.getElementById('save-order').addEventListener('click', function () {
-            if (currentOrderId && currentOrder) {
-                localStorage.setItem(currentOrderId, JSON.stringify(currentOrder));
-                showPopup('Đã lưu thay đổi đơn hàng!');
-            }
-        });
-
-        document.getElementById('delete-order').addEventListener('click', function () {
-            if (currentOrderId && confirm('Bạn có chắc muốn xóa đơn hàng này?')) {
-                localStorage.removeItem(currentOrderId);
-                showPopup('Đã xóa đơn hàng!');
-                document.getElementById('order-result').style.display = 'none';
-            }
-        });
-
-        document.getElementById('print-order').addEventListener('click', function () {
-            if (currentOrderId && currentOrder) {
-                let content = `
-                    --- HÓA ĐƠN --- \n
-                    Khách hàng: ${currentOrder.customer}\n
-                    Thanh toán: ${currentOrder.payment}\n
-                    Sản phẩm:\n
-                `;
-                currentOrder.items.forEach(item => {
-                    content += `- ${item.name} | SL: ${item.qty || 1} | ${parseInt(item.price).toLocaleString()} VND\n`;
-                });
-                content += `\nTổng tiền: ${document.getElementById('result-total').innerText}\n`;
-                const printWindow = window.open('', '', 'width=600,height=400');
-                printWindow.document.write(`<pre>${content}</pre>`);
-                printWindow.document.close();
-                printWindow.print();
-            }
-        });
-
+        // Popup
         function showPopup(message) {
             document.getElementById('popup-message').innerText = message;
             document.getElementById('popup').style.display = 'block';
@@ -164,6 +165,6 @@
             document.getElementById('popup').style.display = 'none';
         }
     </script>
-</body>
 
+</body>
 </html>
