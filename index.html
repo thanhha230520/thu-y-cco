@@ -1,170 +1,2081 @@
+
 <!DOCTYPE html>
-<html lang="vi">
+<!--[if IE 9 ]> <html lang="vi" class="ie9 loading-site no-js"> <![endif]-->
+<!--[if IE 8 ]> <html lang="vi" class="ie8 loading-site no-js"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="vi" class="loading-site no-js"> <!--<![endif]-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Shop</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header, footer { background: #f5a623; color: white; text-align: center; padding: 20px 0; }
-        section { padding: 20px; }
-        .product { border: 1px solid #ccc; padding: 10px; border-radius: 6px; margin: 10px 0; transition: 0.3s; }
-        .product:hover { box-shadow: 0 0 10px rgba(0,0,0,0.2); }
-        button { padding: 5px 10px; margin-top: 5px; cursor: pointer; transition: 0.3s; }
-        button:hover { background: #f5a623; color: white; }
-        .cart { background: #eee; padding: 10px; margin-bottom: 20px; }
-        .cart-item { margin-bottom: 5px; }
-        .hidden { display: none; }
-        #popup { display: none; position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border: 2px solid green; border-radius: 8px; z-index: 999; }
-    </style>
-</head>
-<body>
+	<meta charset="UTF-8" />
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="https://thuytranthuy.com/xmlrpc.php" />
 
-    <!-- Header -->
-    <header>
-        <h1>🐾 Pet Shop</h1>
-        <p>Chăm sóc thú cưng tận tâm</p>
-    </header>
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<!-- This site is optimized with the Yoast SEO plugin v16.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Thú y Tr?n Thúy | Chia s? ki?n th?c chan nuôi | Cho di là nh?n l?i</title>
+	<meta name="description" content="Bác si thú y Tr?n Thúy - nhà sáng t?o n?i dung ngành chan nuôi trên các c?ng thông tin di?n t?, d?ng hành cùng bà con nông dân" />
+	<link rel="canonical" href="https://thuytranthuy.com/" />
+	<meta property="og:locale" content="vi_VN" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Thú y Tr?n Thúy | Chia s? ki?n th?c chan nuôi | Cho di là nh?n l?i" />
+	<meta property="og:description" content="Bác si thú y Tr?n Thúy - nhà sáng t?o n?i dung ngành chan nuôi trên các c?ng thông tin di?n t?, d?ng hành cùng bà con nông dân" />
+	<meta property="og:url" content="https://thuytranthuy.com/" />
+	<meta property="og:site_name" content="Thú y Tr?n Thúy" />
+	<meta property="article:modified_time" content="2024-12-03T05:02:24+00:00" />
+	<meta property="og:image" content="https://thuytranthuy.com/wp-content/uploads/2021/07/bac-sy-thu-y-tran-thuy.jpg" />
+	<meta property="og:image:width" content="647" />
+	<meta property="og:image:height" content="647" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="U?c tính th?i gian d?c" />
+	<meta name="twitter:data1" content="7 phút" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://thuytranthuy.com/#website","url":"https://thuytranthuy.com/","name":"Th\u00fa y Tr\u1ea7n Th\u00fay","description":"Chia s\u1ebb ki\u1ebfn th\u1ee9c ch\u0103n nu\u00f4i - cho \u0111i l\u00e0 nh\u1eadn l\u1ea1i","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://thuytranthuy.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"vi"},{"@type":"ImageObject","@id":"https://thuytranthuy.com/#primaryimage","inLanguage":"vi","url":"https://thuytranthuy.com/wp-content/uploads/2021/07/bac-sy-thu-y-tran-thuy.jpg","contentUrl":"https://thuytranthuy.com/wp-content/uploads/2021/07/bac-sy-thu-y-tran-thuy.jpg","width":647,"height":647,"caption":"B\u00e1c s\u1ef9 th\u00fa y Tr\u1ea7n Th\u00fay"},{"@type":"WebPage","@id":"https://thuytranthuy.com/#webpage","url":"https://thuytranthuy.com/","name":"Th\u00fa y Tr\u1ea7n Th\u00fay | Chia s\u1ebb ki\u1ebfn th\u1ee9c ch\u0103n nu\u00f4i | Cho \u0111i l\u00e0 nh\u1eadn l\u1ea1i","isPartOf":{"@id":"https://thuytranthuy.com/#website"},"primaryImageOfPage":{"@id":"https://thuytranthuy.com/#primaryimage"},"datePublished":"2013-08-11T18:04:55+00:00","dateModified":"2024-12-03T05:02:24+00:00","description":"B\u00e1c s\u0129 th\u00fa y Tr\u1ea7n Th\u00fay - nh\u00e0 s\u00e1ng t\u1ea1o n\u1ed9i dung ng\u00e0nh ch\u0103n nu\u00f4i tr\u00ean c\u00e1c c\u1ed5ng th\u00f4ng tin \u0111i\u1ec7n t\u1eed, \u0111\u1ed3ng h\u00e0nh c\u00f9ng b\u00e0 con n\u00f4ng d\u00e2n","breadcrumb":{"@id":"https://thuytranthuy.com/#breadcrumb"},"inLanguage":"vi","potentialAction":[{"@type":"ReadAction","target":["https://thuytranthuy.com/"]}]},{"@type":"BreadcrumbList","@id":"https://thuytranthuy.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang ch\u1ee7"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
 
-    <!-- Giỏ hàng -->
-    <section class="cart">
-        <h3>🛒 Giỏ hàng</h3>
-        <div id="cart-items"></div>
-        <p><strong>Tổng tiền:</strong> <span id="cart-total">0</span> VND</p>
-        <button onclick="checkout()">Thanh toán</button>
-    </section>
 
-    <!-- Sản phẩm -->
-    <section>
-        <h2>Sản phẩm nổi bật</h2>
-        <div class="product">
-            <h3>Thức ăn cho chó</h3>
-            <p>Giá: 100000 VND</p>
-            <button onclick="addToCart('Thức ăn cho chó', 100000)">Thêm vào giỏ</button>
-        </div>
-        <div class="product">
-            <h3>Phụ kiện cho mèo</h3>
-            <p>Giá: 50000 VND</p>
-            <button onclick="addToCart('Phụ kiện cho mèo', 50000)">Thêm vào giỏ</button>
-        </div>
-    </section>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Dòng thông tin Thú y Tr?n Thúy &raquo;" href="https://thuytranthuy.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Thú y Tr?n Thúy &raquo; Dòng bình lu?n" href="https://thuytranthuy.com/comments/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thuytranthuy.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
 
-    <!-- Tra cứu đơn hàng -->
-    <section>
-        <h2>🔍 Tra cứu đơn hàng</h2>
-        <form id="tracking-form">
-            <input type="text" id="order-id-input" placeholder="Nhập mã đơn hàng..." required>
-            <button type="submit">Tra cứu</button>
-        </form>
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://thuytranthuy.com/wp-includes/css/dist/block-library/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-vendors-style-css' href='https://thuytranthuy.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style.css?ver=5.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-style-css' href='https://thuytranthuy.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css?ver=5.1.0' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://thuytranthuy.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4.1' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='flatsome-icons-css' href='https://thuytranthuy.com/wp-content/themes/flatsome/assets/css/fl-icons.css?ver=3.12' type='text/css' media='all' />
+<link rel='stylesheet' id='flatsome-main-css' href='https://thuytranthuy.com/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.12.0' type='text/css' media='all' />
+<link rel='stylesheet' id='flatsome-shop-css' href='https://thuytranthuy.com/wp-content/themes/flatsome/assets/css/flatsome-shop.css?ver=3.12.0' type='text/css' media='all' />
+<link rel='stylesheet' id='flatsome-style-css' href='https://thuytranthuy.com/wp-content/themes/thu-y-tran-thuy/style.css?ver=3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='flatsome-googlefonts-css' href='//fonts.googleapis.com/css?family=%3Aregular%2C%2C%2C%7CDancing+Script%3Aregular%2C400&#038;display=swap&#038;ver=3.9' type='text/css' media='all' />
+<script type="text/javascript">
+            window._nslDOMReady = function (callback) {
+                if ( document.readyState === "complete" || document.readyState === "interactive" ) {
+                    callback();
+                } else {
+                    document.addEventListener( "DOMContentLoaded", callback );
+                }
+            };
+            </script><script type="text/javascript" src="https://thuytranthuy.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://thuytranthuy.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://thuytranthuy.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://thuytranthuy.com/wp-json/wp/v2/pages/98" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thuytranthuy.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.6.1" />
+<meta name="generator" content="WooCommerce 5.4.2" />
+<link rel='shortlink' href='https://thuytranthuy.com/' />
+<link rel="alternate" title="oNhúng (JSON)" type="application/json+oembed" href="https://thuytranthuy.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthuytranthuy.com%2F" />
+<link rel="alternate" title="oNhúng (XML)" type="text/xml+oembed" href="https://thuytranthuy.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthuytranthuy.com%2F&#038;format=xml" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-203755669-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        <div id="order-result" class="hidden" style="margin-top:20px; border:1px solid #ccc; padding:15px; border-radius:8px;">
-            <h3>Chi tiết đơn hàng:</h3>
-            <p><strong>Khách hàng:</strong> Khách lẻ</p>
-            <p><strong>Thanh toán:</strong> Tiền mặt</p>
-            <p><strong>Tổng tiền:</strong> <span id="result-total"></span></p>
-            <ul id="result-items"></ul>
-        </div>
+  gtag('config', 'UA-203755669-1');
+</script><style>.bg{opacity: 0; transition: opacity 1s; -webkit-transition: opacity 1s;} .bg-loaded{opacity: 1;}</style><!--[if IE]><link rel="stylesheet" type="text/css" href="https://thuytranthuy.com/wp-content/themes/flatsome/assets/css/ie-fallback.css"><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script><script>var head = document.getElementsByTagName('head')[0],style = document.createElement('style');style.type = 'text/css';style.styleSheet.cssText = ':before,:after{content:none !important';head.appendChild(style);setTimeout(function(){head.removeChild(style);}, 0);</script><script src="https://thuytranthuy.com/wp-content/themes/flatsome/assets/libs/ie-flexibility.js"></script><![endif]-->	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<link rel="icon" href="https://thuytranthuy.com/wp-content/uploads/2021/07/cropped-icon-logo-100x100.png" sizes="32x32" />
+<link rel="icon" href="https://thuytranthuy.com/wp-content/uploads/2021/07/cropped-icon-logo-280x280.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://thuytranthuy.com/wp-content/uploads/2021/07/cropped-icon-logo-280x280.png" />
+<meta name="msapplication-TileImage" content="https://thuytranthuy.com/wp-content/uploads/2021/07/cropped-icon-logo-280x280.png" />
+<style id="custom-css" type="text/css">:root {--primary-color: #0087b7;}.header-main{height: 100px}#logo img{max-height: 100px}#logo{width:200px;}.header-bottom{min-height: 47px}.header-top{min-height: 30px}.has-transparent + .page-title:first-of-type,.has-transparent + #main > .page-title,.has-transparent + #main > div > .page-title,.has-transparent + #main .page-header-wrapper:first-of-type .page-title{padding-top: 150px;}.header.show-on-scroll,.stuck .header-main{height:70px!important}.stuck #logo img{max-height: 70px!important}.header-bg-color, .header-wrapper {background-color: #0A0A0A}.header-bottom {background-color: #212121}.header-main .nav > li > a{line-height: 16px }.stuck .header-main .nav > li > a{line-height: 50px }.header-bottom-nav > li > a{line-height: 16px }@media (max-width: 549px) {.header-main{height: 70px}#logo img{max-height: 70px}}.main-menu-overlay{background-color: #353535}.nav-dropdown-has-arrow li.has-dropdown:before{border-bottom-color: #FFFFFF;}.nav .nav-dropdown{border-color: #FFFFFF }.nav-dropdown{font-size:100%}/* Color */.accordion-title.active, .has-icon-bg .icon .icon-inner,.logo a, .primary.is-underline, .primary.is-link, .badge-outline .badge-inner, .nav-outline > li.active> a,.nav-outline >li.active > a, .cart-icon strong,[data-color='primary'], .is-outline.primary{color: #0087b7;}/* Color !important */[data-text-color="primary"]{color: #0087b7!important;}/* Background Color */[data-text-bg="primary"]{background-color: #0087b7;}/* Background */.scroll-to-bullets a,.featured-title, .label-new.menu-item > a:after, .nav-pagination > li > .current,.nav-pagination > li > span:hover,.nav-pagination > li > a:hover,.has-hover:hover .badge-outline .badge-inner,button[type="submit"], .button.wc-forward:not(.checkout):not(.checkout-button), .button.submit-button, .button.primary:not(.is-outline),.featured-table .title,.is-outline:hover, .has-icon:hover .icon-label,.nav-dropdown-bold .nav-column li > a:hover, .nav-dropdown.nav-dropdown-bold > li > a:hover, .nav-dropdown-bold.dark .nav-column li > a:hover, .nav-dropdown.nav-dropdown-bold.dark > li > a:hover, .is-outline:hover, .tagcloud a:hover,.grid-tools a, input[type='submit']:not(.is-form), .box-badge:hover .box-text, input.button.alt,.nav-box > li > a:hover,.nav-box > li.active > a,.nav-pills > li.active > a ,.current-dropdown .cart-icon strong, .cart-icon:hover strong, .nav-line-bottom > li > a:before, .nav-line-grow > li > a:before, .nav-line > li > a:before,.banner, .header-top, .slider-nav-circle .flickity-prev-next-button:hover svg, .slider-nav-circle .flickity-prev-next-button:hover .arrow, .primary.is-outline:hover, .button.primary:not(.is-outline), input[type='submit'].primary, input[type='submit'].primary, input[type='reset'].button, input[type='button'].primary, .badge-inner{background-color: #0087b7;}/* Border */.nav-vertical.nav-tabs > li.active > a,.scroll-to-bullets a.active,.nav-pagination > li > .current,.nav-pagination > li > span:hover,.nav-pagination > li > a:hover,.has-hover:hover .badge-outline .badge-inner,.accordion-title.active,.featured-table,.is-outline:hover, .tagcloud a:hover,blockquote, .has-border, .cart-icon strong:after,.cart-icon strong,.blockUI:before, .processing:before,.loading-spin, .slider-nav-circle .flickity-prev-next-button:hover svg, .slider-nav-circle .flickity-prev-next-button:hover .arrow, .primary.is-outline:hover{border-color: #0087b7}.nav-tabs > li.active > a{border-top-color: #0087b7}.widget_shopping_cart_content .blockUI.blockOverlay:before { border-left-color: #0087b7 }.woocommerce-checkout-review-order .blockUI.blockOverlay:before { border-left-color: #0087b7 }/* Fill */.slider .flickity-prev-next-button:hover svg,.slider .flickity-prev-next-button:hover .arrow{fill: #0087b7;}/* Background Color */[data-icon-label]:after, .secondary.is-underline:hover,.secondary.is-outline:hover,.icon-label,.button.secondary:not(.is-outline),.button.alt:not(.is-outline), .badge-inner.on-sale, .button.checkout, .single_add_to_cart_button, .current .breadcrumb-step{ background-color:#DD9933; }[data-text-bg="secondary"]{background-color: #DD9933;}/* Color */.secondary.is-underline,.secondary.is-link, .secondary.is-outline,.stars a.active, .star-rating:before, .woocommerce-page .star-rating:before,.star-rating span:before, .color-secondary{color: #DD9933}/* Color !important */[data-text-color="secondary"]{color: #DD9933!important;}/* Border */.secondary.is-outline:hover{border-color:#DD9933}body{font-size: 100%;}@media screen and (max-width: 549px){body{font-size: 100%;}}body{color: #4f4f4f}h1,h2,h3,h4,h5,h6,.heading-font{color: #000000;}.alt-font{font-family: "Dancing Script", sans-serif;}.alt-font{font-weight: 400!important;}a{color: #000000;}a:hover{color: #aa5ef7;}.tagcloud a:hover{border-color: #aa5ef7;background-color: #aa5ef7;}@media screen and (min-width: 550px){.products .box-vertical .box-image{min-width: 300px!important;width: 300px!important;}}.footer-1{background-color: #f7f7f7}.label-new.menu-item > a:after{content:"New";}.label-hot.menu-item > a:after{content:"Hot";}.label-sale.menu-item > a:after{content:"Sale";}.label-popular.menu-item > a:after{content:"Popular";}</style></head>
 
-        <!-- Popup -->
-        <div id="popup">
-            <p id="popup-message"></p>
-            <button onclick="closePopup()">OK</button>
-        </div>
-    </section>
+<body class="home page-template-default page page-id-98 theme-flatsome woocommerce-no-js lightbox nav-dropdown-has-arrow">
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Pet Shop - Hotline: 0123 456 789</p>
-    </footer>
 
-    <!-- Script -->
-    <script>
-        const cart = [];
+<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
 
-        function addToCart(name, price) {
-            const existing = cart.find(item => item.name === name);
-            if (existing) {
-                existing.qty++;
-            } else {
-                cart.push({ name, price, qty: 1 });
-            }
-            renderCart();
-        }
+<div id="wrapper">
 
-        function renderCart() {
-            const cartItems = document.getElementById('cart-items');
-            cartItems.innerHTML = '';
-            let total = 0;
-            cart.forEach((item, index) => {
-                total += item.price * item.qty;
-                cartItems.innerHTML += `
-                    <div class="cart-item">
-                        ${item.name} - ${item.price} VND x ${item.qty}
-                        <button onclick="changeQty(${index}, 1)">+</button>
-                        <button onclick="changeQty(${index}, -1)">-</button>
-                        <button onclick="removeItem(${index})">Xóa</button>
+	
+	<header id="header" class="header has-sticky sticky-jump">
+		<div class="header-wrapper">
+			<div id="masthead" class="header-main show-logo-center nav-dark">
+      <div class="header-inner flex-row container logo-center medium-logo-center" role="navigation">
+
+          <!-- Logo -->
+          <div id="logo" class="flex-col logo">
+            <!-- Header logo -->
+<a href="https://thuytranthuy.com/" title="Thú y Tr?n Thúy - Chia s? ki?n th?c chan nuôi &#8211; cho di là nh?n l?i" rel="home">
+    <img width="200" height="100" src="https://thuytranthuy.com/wp-content/uploads/2021/07/logo-10.png" class="header_logo header-logo" alt="Thú y Tr?n Thúy"/><img  width="200" height="100" src="https://thuytranthuy.com/wp-content/uploads/2021/07/logo-10.png" class="header-logo-dark" alt="Thú y Tr?n Thúy"/></a>
+          </div>
+
+          <!-- Mobile Left Elements -->
+          <div class="flex-col show-for-medium flex-left">
+            <ul class="mobile-nav nav nav-left ">
+              <li class="nav-icon has-icon">
+  		<a href="#" data-open="#main-menu" data-pos="left" data-bg="main-menu-overlay" data-color="dark" class="is-small" aria-label="Menu" aria-controls="main-menu" aria-expanded="false">
+		
+		  <i class="icon-menu" ></i>
+		  <span class="menu-title uppercase hide-for-small">Menu</span>		</a>
+	</li>            </ul>
+          </div>
+
+          <!-- Left Elements -->
+          <div class="flex-col hide-for-medium flex-left
+            ">
+            <ul class="header-nav header-nav-main nav nav-left  nav-uppercase" >
+              <li class="header-search-form search-form html relative has-icon">
+	<div class="header-search-form-wrapper">
+		<div class="searchform-wrapper ux-search-box relative form-flat is-normal"><form role="search" method="get" class="searchform" action="https://thuytranthuy.com/">
+	<div class="flex-row relative">
+						<div class="flex-col flex-grow">
+			<label class="screen-reader-text" for="woocommerce-product-search-field-0">Tìm ki?m:</label>
+			<input type="search" id="woocommerce-product-search-field-0" class="search-field mb-0" placeholder="Tìm ki?m&hellip;" value="" name="s" />
+			<input type="hidden" name="post_type" value="product" />
+					</div>
+		<div class="flex-col">
+			<button type="submit" value="Tìm ki?m" class="ux-search-submit submit-button secondary button icon mb-0">
+				<i class="icon-search" ></i>			</button>
+		</div>
+	</div>
+	<div class="live-search-results text-left z-top"></div>
+</form>
+</div>	</div>
+</li>            </ul>
+          </div>
+
+          <!-- Right Elements -->
+          <div class="flex-col hide-for-medium flex-right">
+            <ul class="header-nav header-nav-main nav nav-right  nav-uppercase">
+              <li class="account-item has-icon
+    "
+>
+
+<a href="https://thuytranthuy.com/my-account/"
+    class="nav-top-link nav-top-not-logged-in "
+    data-open="#login-form-popup"  >
+    <span>
+    Ðang nh?p      </span>
+  
+</a>
+
+
+
+</li>
+<li class="header-divider"></li><li class="cart-item has-icon has-dropdown">
+
+<a href="https://thuytranthuy.com/cart/" title="Gi? hàng" class="header-cart-link is-small">
+
+
+<span class="header-cart-title">
+   Gi? hàng   /      <span class="cart-price"><span class="woocommerce-Price-amount amount"><bdi>0<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+  </span>
+
+    <span class="cart-icon image-icon">
+    <strong>0</strong>
+  </span>
+  </a>
+
+ <ul class="nav-dropdown nav-dropdown-default dropdown-uppercase">
+    <li class="html widget_shopping_cart">
+      <div class="widget_shopping_cart_content">
+        
+
+	<p class="woocommerce-mini-cart__empty-message">Chua có s?n ph?m trong gi? hàng.</p>
+
+
+      </div>
+    </li>
+     </ul>
+
+</li>
+            </ul>
+          </div>
+
+          <!-- Mobile Right Elements -->
+          <div class="flex-col show-for-medium flex-right">
+            <ul class="mobile-nav nav nav-right ">
+              <li class="cart-item has-icon">
+
+      <a href="https://thuytranthuy.com/cart/" class="header-cart-link off-canvas-toggle nav-top-link is-small" data-open="#cart-popup" data-class="off-canvas-cart" title="Gi? hàng" data-pos="right">
+  
+    <span class="cart-icon image-icon">
+    <strong>0</strong>
+  </span>
+  </a>
+
+
+  <!-- Cart Sidebar Popup -->
+  <div id="cart-popup" class="mfp-hide widget_shopping_cart">
+  <div class="cart-popup-inner inner-padding">
+      <div class="cart-popup-title text-center">
+          <h4 class="uppercase">Gi? hàng</h4>
+          <div class="is-divider"></div>
+      </div>
+      <div class="widget_shopping_cart_content">
+          
+
+	<p class="woocommerce-mini-cart__empty-message">Chua có s?n ph?m trong gi? hàng.</p>
+
+
+      </div>
+             <div class="cart-sidebar-content relative"></div>  </div>
+  </div>
+
+</li>
+            </ul>
+          </div>
+
+      </div>
+     
+            <div class="container"><div class="top-divider full-width"></div></div>
+      </div><div id="wide-nav" class="header-bottom wide-nav nav-dark flex-has-center hide-for-medium">
+    <div class="flex-row container">
+
+            
+                        <div class="flex-col hide-for-medium flex-center">
+                <ul class="nav header-nav header-bottom-nav nav-center  nav-line-grow nav-size-medium nav-spacing-large nav-uppercase">
+                    <li id="menu-item-691" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-98 current_page_item menu-item-691 active"><a href="https://thuytranthuy.com/" aria-current="page" class="nav-top-link">Trang ch?</a></li>
+<li id="menu-item-685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685"><a href="https://thuytranthuy.com/chan-nuoi-lon/" class="nav-top-link">Chan nuôi l?n</a></li>
+<li id="menu-item-1234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1234"><a href="https://thuytranthuy.com/chan-nuoi-ga/" class="nav-top-link">Chan nuôi gà</a></li>
+<li id="menu-item-1579" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1579"><a href="https://thuytranthuy.com/thuoc-thu-y/" class="nav-top-link">Thu?c thú y</a></li>
+<li id="menu-item-1582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1582"><a href="https://thuytranthuy.com/che-pham-sinh-hoc-trong-chan-nuoi/" class="nav-top-link">Ch? ph?m sinh h?c</a></li>
+<li id="menu-item-1615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1615"><a href="https://thuytranthuy.com/dung-cu-chan-nuoi/" class="nav-top-link">D?ng c? chan nuôi</a></li>
+<li id="menu-item-585" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-585 has-dropdown"><a href="#" class="nav-top-link">B?n tin<i class="icon-angle-down" ></i></a>
+<ul class="sub-menu nav-dropdown nav-dropdown-default dropdown-uppercase">
+	<li id="menu-item-1699" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1699"><a href="https://thuytranthuy.com/category/tin-tuc/">Tin t?c</a></li>
+	<li id="menu-item-1698" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1698"><a href="https://thuytranthuy.com/category/hoat-dong/">Ho?t d?ng</a></li>
+</ul>
+</li>
+                </ul>
+            </div>
+            
+            
+            
+    </div>
+</div>
+
+<div class="header-bg-container fill"><div class="header-bg-image fill"></div><div class="header-bg-color fill"></div></div>		</div>
+	</header>
+
+	
+	<main id="main" class="">
+<div id="content" class="content-area page-wrapper" role="main">
+	<div class="row row-main">
+		<div class="large-12 col">
+			<div class="col-inner">
+				
+				
+														
+						
+<div class="slider-wrapper relative hide-for-medium" id="slider-906513720" style="background-color:rgb(79, 79, 79);">
+    <div class="slider slider-nav-dots-dashes-spaced slider-nav-circle slider-nav-normal slider-nav-light slider-style-normal slider-show-nav"
+        data-flickity-options='{
+            "cellAlign": "center",
+            "imagesLoaded": true,
+            "lazyLoad": 1,
+            "freeScroll": false,
+            "wrapAround": true,
+            "autoPlay": 4000,
+            "pauseAutoPlayOnHover" : true,
+            "prevNextButtons": true,
+            "contain" : true,
+            "adaptiveHeight" : true,
+            "dragThreshold" : 10,
+            "percentPosition": true,
+            "pageDots": true,
+            "rightToLeft": false,
+            "draggable": true,
+            "selectedAttraction": 0.1,
+            "parallax" : 0,
+            "friction": 0.6        }'
+        >
+        
+
+
+  <div class="banner has-hover" id="banner-393635922">
+          <div class="banner-inner fill">
+        <div class="banner-bg fill" >
+            <div class="bg fill bg-fill "></div>
+                                    
                     </div>
-                `;
-            });
-            document.getElementById('cart-total').innerText = total.toLocaleString();
-        }
+        <div class="banner-layers container">
+            <a class="fill" href="https://thuytranthuy.com/tham-day-chuyen-san-xuat-khang-the-gamma-globulin-cho-heo/"  ><div class="fill banner-link"></div></a>            
 
-        function changeQty(index, delta) {
-            cart[index].qty += delta;
-            if (cart[index].qty <= 0) cart.splice(index, 1);
-            renderCart();
-        }
+   <div id="text-box-1047140663" class="text-box banner-layer x5 md-x5 lg-x5 y95 md-y95 lg-y95 res-text">
+                                <div class="text dark">
+              
+              <div class="text-inner text-left">
+                  
 
-        function removeItem(index) {
-            cart.splice(index, 1);
-            renderCart();
-        }
+<h5><a href="https://thuytranthuy.com/tham-day-chuyen-san-xuat-khang-the-gamma-globulin-cho-heo/">Tham dây chuy?n s?n xu?t kháng th? Gamma Globulin mi?n d?ch cho heo</a></h5>
 
-        function checkout() {
-            if (cart.length === 0) {
-                showPopup('Giỏ hàng trống!');
-                return;
-            }
-            const orderId = 'DH' + Date.now();
-            const order = { customer: 'Khách lẻ', payment: 'Tiền mặt', items: cart, total: calcTotal() };
-            localStorage.setItem(orderId, JSON.stringify(order));
-            cart.length = 0;
-            renderCart();
-            showPopup(`Đã thanh toán thành công! Mã đơn: ${orderId}`);
-        }
+              </div>
+           </div>
+                            
+<style>
+#text-box-1047140663 {
+  width: 60%;
+}
+#text-box-1047140663 .text {
+  font-size: 100%;
+}
+@media (min-width:550px) {
+  #text-box-1047140663 {
+    width: 40%;
+  }
+}
+</style>
+    </div>
+ 
 
-        function calcTotal() {
-            return cart.reduce((sum, item) => sum + item.price * item.qty, 0);
-        }
+        </div>
+      </div>
 
-        // Tra cứu đơn
-        document.getElementById('tracking-form').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const orderId = document.getElementById('order-id-input').value.trim();
-            const order = JSON.parse(localStorage.getItem(orderId));
-            if (order) {
-                document.getElementById('result-total').innerText = order.total.toLocaleString() + ' VND';
-                const list = document.getElementById('result-items');
-                list.innerHTML = '';
-                order.items.forEach(item => {
-                    list.innerHTML += `<li>${item.name} | SL: ${item.qty} | ${item.price.toLocaleString()} VND</li>`;
-                });
-                document.getElementById('order-result').classList.remove('hidden');
-            } else {
-                showPopup('Không tìm thấy đơn hàng!');
-                document.getElementById('order-result').classList.add('hidden');
-            }
-        });
+            
+<style>
+#banner-393635922 {
+  padding-top: 500px;
+}
+#banner-393635922 .bg.bg-loaded {
+  background-image: url(https://thuytranthuy.com/wp-content/uploads/2021/10/khang-the-gamma-globulin-cho-heo-pig-01-cnc-1400x787.jpg);
+}
+</style>
+  </div>
 
-        // Popup
-        function showPopup(message) {
-            document.getElementById('popup-message').innerText = message;
-            document.getElementById('popup').style.display = 'block';
-        }
-        function closePopup() {
-            document.getElementById('popup').style.display = 'none';
-        }
-    </script>
+
+
+  <div class="banner has-hover" id="banner-1792678755">
+          <div class="banner-inner fill">
+        <div class="banner-bg fill" >
+            <div class="bg fill bg-fill "></div>
+                                    
+                    </div>
+        <div class="banner-layers container">
+            <a class="fill" href="https://thuytranthuy.com/hop-dong-san-xuat-thuoc-thu-y/"  ><div class="fill banner-link"></div></a>            
+
+   <div id="text-box-751273122" class="text-box banner-layer x5 md-x5 lg-x5 y95 md-y95 lg-y95 res-text">
+                                <div class="text dark">
+              
+              <div class="text-inner text-left">
+                  
+
+<h5><a href="https://thuytranthuy.com/hop-dong-san-xuat-thuoc-thu-y/">Bác si thú y Tr?n Thúy ký k?t h?p d?ng s?n xu?t thu?c thú y tr? giá 15 t? d?ng</a></h5>
+
+              </div>
+           </div>
+                            
+<style>
+#text-box-751273122 {
+  width: 60%;
+}
+#text-box-751273122 .text {
+  font-size: 100%;
+}
+@media (min-width:550px) {
+  #text-box-751273122 {
+    width: 40%;
+  }
+}
+</style>
+    </div>
+ 
+
+        </div>
+      </div>
+
+            
+<style>
+#banner-1792678755 {
+  padding-top: 500px;
+}
+#banner-1792678755 .bg.bg-loaded {
+  background-image: url(https://thuytranthuy.com/wp-content/uploads/2022/03/hop-dong-san-xuat-thuoc-thu-y-1400x788.jpg);
+}
+</style>
+  </div>
+
+
+
+     </div>
+
+     <div class="loading-spin dark large centered"></div>
+
+     </div>
+
+
+	<div id="gap-345575121" class="gap-element clearfix hide-for-medium" style="display:block; height:auto;">
+		
+<style>
+#gap-345575121 {
+  padding-top: 30px;
+}
+</style>
+	</div>
+	
+
+<p><em>Chào m?ng bà con d?n v?i Thú y Tr?n Thúy &#8211; trang kênh chia s? ki?n th?c chan nuôi hoàn toàn mi?n phí!</em></p>
+<div class="container section-title-container" ><h2 class="section-title section-title-normal"><b></b><span class="section-title-main" >Chan nuôi l?n</span><b></b><a href="https://thuytranthuy.com/chan-nuoi-lon" target=""><i class="icon-angle-right" ></i></a></h2></div>
+
+<div class="row row-large"  id="row-1261274153">
+
+
+	<div id="col-631263609" class="col medium-7 small-12 large-7"  >
+		<div class="col-inner"  >
+			
+			
+
+<div class="video video-fit mb" style="padding-top:56.25%;"><iframe loading="lazy" title="Cách cham sóc l?n con sau khi sinh | Quy trình cham sóc heo con sau cai s?a" width="1020" height="574" src="https://www.youtube.com/embed/LS4p22Ublks?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<h4><a href="https://thuytranthuy.com/chan-nuoi-lon/quy-trinh-cham-soc-heo-con-sau-cai-sua/">Quy trình cham sóc heo con sau cai s?a</a></h4>
+<p><a href="https://thuytranthuy.com/chan-nuoi-lon/quy-trinh-cham-soc-heo-con-sau-cai-sua/">Hu?ng d?n cham sóc l?n con sau khi sinh và sau cai s?a, k? thu?t làm v?c xin cho heo con, ch? d? an u?ng và th?c ph?m ch?c nang</a></p>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-497669356" class="col medium-5 small-12 large-5"  >
+		<div class="col-inner"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_239847814">
+		<a class="" href="https://thuytranthuy.com/chan-nuoi-lon/cach-do-de-cho-heo-nai/"  >						<div class="img-inner dark" >
+			<img loading="lazy" decoding="async" width="1020" height="574" src="https://thuytranthuy.com/wp-content/uploads/2021/08/huong-dan-do-de-cho-heo-nai.jpg" class="attachment-large size-large" alt="Hu?ng d?n d? d? cho heo nái" srcset="https://thuytranthuy.com/wp-content/uploads/2021/08/huong-dan-do-de-cho-heo-nai.jpg 1280w, https://thuytranthuy.com/wp-content/uploads/2021/08/huong-dan-do-de-cho-heo-nai-711x400.jpg 711w, https://thuytranthuy.com/wp-content/uploads/2021/08/huong-dan-do-de-cho-heo-nai-768x432.jpg 768w, https://thuytranthuy.com/wp-content/uploads/2021/08/huong-dan-do-de-cho-heo-nai-600x338.jpg 600w" sizes="(max-width: 1020px) 100vw, 1020px" />						
+					</div>
+						</a>		
+<style>
+#image_239847814 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+
+<h4><a href="https://thuytranthuy.com/chan-nuoi-lon/cach-do-de-cho-heo-nai/">K? thu?t d? d? cho heo nái</a></h4>
+<p><a href="https://thuytranthuy.com/chan-nuoi-lon/cach-do-de-cho-heo-nai/">N?u heo nái hay b? an sau khi d?: <span class="style-scope yt-formatted-string" dir="auto">Tru?c khi d? và trong khi d? nh? tiêm thu?c b?.</span> <span class="style-scope yt-formatted-string" dir="auto">Tru?c khi d? 1 ngày tiêm ch?ng viêm.</span> <span class="style-scope yt-formatted-string" dir="auto">N?u nóng quá thì v?a d? v?a truy?n nu?c.</span> <span class="style-scope yt-formatted-string" dir="auto">Tiêm kích d? lúc sinh du?c 1-2 con và tiêm kích d? khi c?m th?y nó d? xong d? ch?c ch?n nó s? không sót rau thì nó s? s?m an tr? l?i&#8230;</span></a></p>
+
+		</div>
+			</div>
+
+	
+
+</div>
+<div class="is-divider divider clearfix" style="margin-top:-0.5em;margin-bottom:-0.5em;max-width:2000px;height:0px;"></div>
+
+<div class="row"  id="row-1924639453">
+
+
+	<div id="col-927716475" class="col medium-4 small-12 large-4"  >
+		<div class="col-inner"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_618943999">
+		<a class="" href="https://thuytranthuy.com/chan-nuoi-lon/heo-cham-len-giong/"  >						<div class="img-inner dark" >
+			<img loading="lazy" decoding="async" width="1020" height="574" src="https://thuytranthuy.com/wp-content/uploads/2021/07/heu-hau-bi.jpg" class="attachment-large size-large" alt="" srcset="https://thuytranthuy.com/wp-content/uploads/2021/07/heu-hau-bi.jpg 1280w, https://thuytranthuy.com/wp-content/uploads/2021/07/heu-hau-bi-711x400.jpg 711w, https://thuytranthuy.com/wp-content/uploads/2021/07/heu-hau-bi-768x432.jpg 768w, https://thuytranthuy.com/wp-content/uploads/2021/07/heu-hau-bi-600x338.jpg 600w" sizes="(max-width: 1020px) 100vw, 1020px" />						
+					</div>
+						</a>		
+<style>
+#image_618943999 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+
+<h4><a href="https://thuytranthuy.com/chan-nuoi-lon/heo-cham-len-giong/">Cách d? heo h?u b? nhanh lên gi?ng</a></h4>
+<p><a href="https://thuytranthuy.com/chan-nuoi-lon/heo-cham-len-giong/">Hu?ng d?n bà con cách kh?c ph?c heo h?u b? ch?m lên gi?ng, không lên gi?ng, rút ng?n th?i gian, gi?m thi?u chi phí chan nuôi</a></p>
+	<div id="gap-498260313" class="gap-element clearfix show-for-small" style="display:block; height:auto;">
+		
+<style>
+#gap-498260313 {
+  padding-top: 0px;
+}
+@media (min-width:550px) {
+  #gap-498260313 {
+    padding-top: 30px;
+  }
+}
+</style>
+	</div>
+	
+
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-123660528" class="col medium-4 small-12 large-4"  >
+		<div class="col-inner"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_110532892">
+		<a class="" href="https://thuytranthuy.com/chan-nuoi-lon/dau-hieu-nhan-biet-lon-nai-mang-thai/"  >						<div class="img-inner dark" >
+			<img loading="lazy" decoding="async" width="1020" height="574" src="https://thuytranthuy.com/wp-content/uploads/2021/07/nhan-biet-heo-nai-mang-thai.jpg" class="attachment-large size-large" alt="Heo nái mang thai" srcset="https://thuytranthuy.com/wp-content/uploads/2021/07/nhan-biet-heo-nai-mang-thai.jpg 1280w, https://thuytranthuy.com/wp-content/uploads/2021/07/nhan-biet-heo-nai-mang-thai-711x400.jpg 711w, https://thuytranthuy.com/wp-content/uploads/2021/07/nhan-biet-heo-nai-mang-thai-768x432.jpg 768w, https://thuytranthuy.com/wp-content/uploads/2021/07/nhan-biet-heo-nai-mang-thai-600x338.jpg 600w" sizes="(max-width: 1020px) 100vw, 1020px" />						
+					</div>
+						</a>		
+<style>
+#image_110532892 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+
+<h4><a href="https://thuytranthuy.com/chan-nuoi-lon/dau-hieu-nhan-biet-lon-nai-mang-thai/">Cách nh?n bi?t heo nái mang thai</a></h4>
+<p><a href="https://thuytranthuy.com/chan-nuoi-lon/dau-hieu-nhan-biet-lon-nai-mang-thai/">Vi?c nh?n bi?t chính xác l?n nái mang thai s? giúp cho vi?c cham sóc heo nái du?c hi?u qu?, ch? d? dinh du?ng và phòng b?nh h?p lý</a></p>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-1588423100" class="col medium-4 small-12 large-4"  >
+		<div class="col-inner"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1734802077">
+		<a class="" href="https://thuytranthuy.com/chan-nuoi-lon/cach-xu-ly-heo-nai-de-kho/"  >						<div class="img-inner dark" >
+			<img loading="lazy" decoding="async" width="1020" height="574" src="https://thuytranthuy.com/wp-content/uploads/2021/08/heo-nai-de-kho.jpg" class="attachment-large size-large" alt="X? lý heo nái d? khó" srcset="https://thuytranthuy.com/wp-content/uploads/2021/08/heo-nai-de-kho.jpg 1280w, https://thuytranthuy.com/wp-content/uploads/2021/08/heo-nai-de-kho-711x400.jpg 711w, https://thuytranthuy.com/wp-content/uploads/2021/08/heo-nai-de-kho-768x432.jpg 768w, https://thuytranthuy.com/wp-content/uploads/2021/08/heo-nai-de-kho-600x338.jpg 600w" sizes="(max-width: 1020px) 100vw, 1020px" />						
+					</div>
+						</a>		
+<style>
+#image_1734802077 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+
+<h4><a class="row-title" href="https://thuytranthuy.com/chan-nuoi-lon/cach-xu-ly-heo-nai-de-kho/" aria-label="“Cách x? lý heo nái d? khó | L?n m? b? xo?n d? con” (Ch?nh s?a)">Cách x? lý heo nái d? khó</a></h4>
+<p><a href="https://thuytranthuy.com/chan-nuoi-lon/cach-xu-ly-heo-nai-de-kho/">Hu?ng d?n bà con chan nuôi nh?n bi?t và x? lý l?n nái khi b? khó d?, k? thu?t móc l?n khi heo nái b? xo?n d? con</a></p>
+
+		</div>
+			</div>
+
+	
+
+</div>
+	<div id="gap-2105327672" class="gap-element clearfix show-for-small" style="display:block; height:auto;">
+		
+<style>
+#gap-2105327672 {
+  padding-top: 30px;
+}
+</style>
+	</div>
+	
+
+<div class="row row-divided"  id="row-1488331822">
+
+
+	<div id="col-1461308848" class="col medium-4 small-12 large-4"  data-animate="fadeInRight">
+		<div class="col-inner"  >
+			
+			
+
+<h5><a href="https://thuytranthuy.com/chan-nuoi-lon/cach-cham-soc-heo-nai-de/">Cách cham sóc heo nái d?</a></h5>
+<p><a href="https://thuytranthuy.com/chan-nuoi-lon/cach-cham-soc-heo-nai-de/">Hu?ng d?n cham sóc l?n m? và l?n con, nâng cao d? kháng, kích thích tang tru?ng</a></p>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-1713088646" class="col medium-4 small-12 large-4"  data-animate="fadeInRight">
+		<div class="col-inner"  >
+			
+			
+
+<h5><a href="https://thuytranthuy.com/chan-nuoi-lon/thu-tinh-nhan-tao-cho-heo-nai/">Hu?ng d?n th? tinh nhân t?o cho heo nái</a></h5>
+<p><a href="https://thuytranthuy.com/chan-nuoi-lon/thu-tinh-nhan-tao-cho-heo-nai/">Phuong pháp ph?i gi?ng nhân t?o dúng cách, hi?u qu?, d?t tiêu chu?n an toàn</a></p>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-531455328" class="col medium-4 small-12 large-4"  data-animate="fadeInRight">
+		<div class="col-inner"  >
+			
+			
+
+<h5><a href="https://thuytranthuy.com/chan-nuoi-lon/quy-trinh-cham-soc-lon-nai-truoc-va-sau-sinh/">Quy trình cham sóc nái tru?c và sau sinh</a></h5>
+<p><a href="https://thuytranthuy.com/chan-nuoi-lon/quy-trinh-cham-soc-lon-nai-truoc-va-sau-sinh/">Quy trình cham sóc heo nái d?, d?u hi?u nh?n bi?t heo s?p d?, cham sóc l?n con sau sinh</a></p>
+
+		</div>
+			</div>
+
+	
+
+
+<style>
+#row-1488331822 > .col > .col-inner {
+  padding: 0px 0px 0px 0px;
+}
+</style>
+</div>
+<div class="row row-collapse hide-for-medium"  id="row-544293041">
+
+
+	<div id="col-501577403" class="col medium-6 small-6 large-6"  data-animate="fadeInRight">
+		<div class="col-inner"  >
+			
+			
+
+<ul>
+<li>
+<h5><a href="https://thuytranthuy.com/chan-nuoi-lon/lich-vac-xin-cho-heo-con/">Quy trình tiêm v?c xin cho l?n con tru?c và sau sinh&#8230;</a></h5>
+</li>
+<li>
+<h5><a href="https://thuytranthuy.com/chan-nuoi-lon/huong-dan-dung-thuoc-kich-de/">Hu?ng d?n dùng thu?c kích d?, h?n gi? d? cho l?n nái</a></h5>
+</li>
+<li>
+<h5><a href="https://thuytranthuy.com/chan-nuoi-lon/cac-vi-tri-tiem-thuoc-cho-lon/">Các v? trí tiêm thu?c cho l?n | K? thu?t tiêm heo</a></h5>
+</li>
+<li>
+<h5><a href="https://thuytranthuy.com/chan-nuoi-lon/bi-quyet-su-dung-khang-the-trong-chan-nuoi/">Bí quy?t s? d?ng kháng th? d? phòng và di?u tr? b?nh</a></h5>
+</li>
+</ul>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-280210414" class="col medium-6 small-6 large-6"  data-animate="fadeInRight">
+		<div class="col-inner"  >
+			
+			
+
+<ul>
+<li>
+<h5><a href="https://thuytranthuy.com/chan-nuoi-lon/cach-tiem-sat-cho-heo-con/">K? thu?t tiêm s?t cho l?n con 3 ngày tu?i</a></h5>
+</li>
+<li>
+<h5><a href="https://thuytranthuy.com/chan-nuoi-lon/cach-thien-heo-con/">K? thu?t thi?n heo con cho ngu?i m?i b?t d?u</a></h5>
+</li>
+<li>
+<h5><a href="https://thuytranthuy.com/chan-nuoi-lon/cach-xu-ly-heo-nai-de-kho/">Cách x? lý heo nái d? khó | L?n m? b? xo?n d? con</a></h5>
+</li>
+<li>
+<h5><a href="/chan-nuoi-lon/cham-soc-heo-con-mat-me/">K? thu?t cham sóc heo con b?ng s?a ngoài</a></h5>
+</li>
+</ul>
+
+		</div>
+			</div>
+
+	
+
+</div>
+	<div id="gap-44465000" class="gap-element clearfix" style="display:block; height:auto;">
+		
+<style>
+#gap-44465000 {
+  padding-top: 20px;
+}
+</style>
+	</div>
+	
+
+<div class="row row-collapse show-for-medium"  id="row-352528478">
+
+
+	<div id="col-1302528480" class="col small-12 large-12"  data-animate="fadeInRight">
+		<div class="col-inner"  >
+			
+			
+
+<ul>
+<li>
+<h5><a href="/chan-nuoi-lon/lich-vac-xin-cho-heo-con/">Quy trình tiêm v?c xin cho l?n con t? khi sinh d?n khi tru?ng thành</a></h5>
+</li>
+<li>
+<h5><a href="https://thuytranthuy.com/chan-nuoi-lon/huong-dan-dung-thuoc-kich-de/">Hu?ng d?n dùng thu?c kích d?, h?n gi? d? cho l?n nái</a></h5>
+</li>
+<li>
+<h5><a href="https://thuytranthuy.com/chan-nuoi-lon/cac-vi-tri-tiem-thuoc-cho-lon/">Các v? trí tiêm thu?c cho l?n | K? thu?t tiêm heo</a></h5>
+</li>
+<li>
+<h5><a href="https://thuytranthuy.com/chan-nuoi-lon/bi-quyet-su-dung-khang-the-trong-chan-nuoi/">Bí quy?t s? d?ng kháng th? d? phòng và di?u tr? b?nh</a></h5>
+</li>
+</ul>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-685698512" class="col small-12 large-12"  data-animate="fadeInRight">
+		<div class="col-inner"  >
+			
+			
+
+<ul>
+<li>
+<h5><a href="https://thuytranthuy.com/chan-nuoi-lon/cach-tiem-sat-cho-heo-con/">K? thu?t tiêm s?t cho l?n con 3 ngày tu?i</a></h5>
+</li>
+<li>
+<h5><a href="https://thuytranthuy.com/chan-nuoi-lon/cach-thien-heo-con/">K? thu?t thi?n heo con cho ngu?i m?i b?t d?u</a></h5>
+</li>
+<li>
+<h5><a href="https://thuytranthuy.com/chan-nuoi-lon/cach-xu-ly-heo-nai-de-kho/">Cách x? lý heo nái d? khó | L?n m? b? xo?n d? con</a></h5>
+</li>
+<li>
+<h5><a href="https://thuytranthuy.com/chan-nuoi-lon/cham-soc-heo-con-mat-me/">K? thu?t cham sóc heo con b?ng s?a ngoài</a></h5>
+</li>
+</ul>
+
+		</div>
+			</div>
+
+	
+
+</div>
+<div class="is-divider divider clearfix" style="margin-top:0px;margin-bottom:0px;max-width:2000px;"></div>
+
+	<div id="gap-451210720" class="gap-element clearfix" style="display:block; height:auto;">
+		
+<style>
+#gap-451210720 {
+  padding-top: 30px;
+}
+</style>
+	</div>
+	
+
+<div class="row hide-for-medium"  id="row-934908512">
+
+
+	<div id="col-1546642124" class="col medium-4 small-12 large-4"  >
+		<div class="col-inner"  >
+			
+			
+
+<h5>Cách ch?a l?n nái b? an vì s?c nhi?t do tr?i n?ng nóng</h5>
+<p>Heo nái b? an do th?i ti?t n?ng nóng kéo dài, d?n d?n m?t m?i, chán an… c?n ph?i b? sung nu?c và di?n gi?i…</p>
+<div class="video video-fit mb" style="padding-top:50%;"><p><iframe loading="lazy" title="Cách ch?a l?n nái b? an vì s?c nhi?t do tr?i n?ng nóng" width="1020" height="574" src="https://www.youtube.com/embed/2Q9-0A7Oy8M?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</div>
+
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-432241697" class="col medium-4 small-12 large-4"  >
+		<div class="col-inner"  >
+			
+			
+
+<h5>Ch?n doán và cách phòng tránh b?nh d?ch t? l?n châu Phi</h5>
+<p>Hu?ng d?n bà con ch?n doán b?nh tích, cách phòng tránh và bi?n pháp d?p d?ch, v? sinh chu?ng tr?i cho l?a heo sau</p>
+<div class="video video-fit mb" style="padding-top:50%;"><p><iframe loading="lazy" title="? C?NH BÁO ?? D?ch t? l?n châu phi bùng phát m?nh t?i các t?nh phía b?c" width="1020" height="574" src="https://www.youtube.com/embed/0Cfc7SceO1I?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</div>
+
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-85195047" class="col medium-4 small-12 large-4"  >
+		<div class="col-inner"  >
+			
+			
+
+<h5><a href="https://thuytranthuy.com/san-pham/thuoc-tiem-dac-tri-benh-ho-hap-phuc-hop/">L?n b? ho, th? gi?t, th? hóp b?ng, s?t h?ng r?c&#8230; ch?a sao dây?</a></h5>
+<p><a href="https://thuytranthuy.com/san-pham/thuoc-tiem-dac-tri-benh-ho-hap-phuc-hop/">Tri?u tr?ng di?n hình c?a b?nh hô h?p ph?c h?p: l?n ho dau ph?i, s?t cao, th? hóp b?ng, ng?i ki?u chó…</a></p>
+<div class="video video-fit mb" style="padding-top:50%;"><p><iframe loading="lazy" title="L?n b? ho, th? gi?t, th? hóp b?ng, s?t h?ng r?c… ch?a sao dây?" width="1020" height="574" src="https://www.youtube.com/embed/5IfOBS5F9Bk?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</div>
+
+
+		</div>
+			</div>
+
+	
+
+</div>
+<div class="row row-collapse show-for-medium"  id="row-970570563">
+
+
+	<div id="col-2035895722" class="col medium-6 small-12 large-6"  >
+		<div class="col-inner"  >
+			
+			
+
+<h3>Cách ch?a l?n nái b? an vì s?c nhi?t do tr?i n?ng nóng</h3>
+<p>Heo nái b? an do th?i ti?t n?ng nóng kéo dài, d?n d?n m?t m?i, chán an… c?n ph?i b? sung nu?c và di?n gi?i&#8230;</p>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-268961673" class="col medium-6 small-12 large-6"  >
+		<div class="col-inner"  >
+			
+			
+
+<div class="video video-fit mb" style="padding-top:56.25%;"><p><iframe loading="lazy" title="Cách ch?a l?n nái b? an vì s?c nhi?t do tr?i n?ng nóng" width="1020" height="574" src="https://www.youtube.com/embed/2Q9-0A7Oy8M?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</div>
+
+
+		</div>
+			</div>
+
+	
+
+</div>
+	<div id="gap-238514495" class="gap-element clearfix show-for-medium" style="display:block; height:auto;">
+		
+<style>
+#gap-238514495 {
+  padding-top: 50px;
+}
+@media (min-width:550px) {
+  #gap-238514495 {
+    padding-top: 30px;
+  }
+}
+</style>
+	</div>
+	
+
+<div class="row row-small align-middle show-for-medium"  id="row-513771880">
+
+
+	<div id="col-1692663153" class="col medium-6 small-5 large-6"  >
+		<div class="col-inner"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_18122697">
+								<div class="img-inner dark" >
+			<img loading="lazy" decoding="async" width="720" height="720" src="https://thuytranthuy.com/wp-content/uploads/2021/07/Dich-ta-lon-chau-Phi.jpg" class="attachment-large size-large" alt="" srcset="https://thuytranthuy.com/wp-content/uploads/2021/07/Dich-ta-lon-chau-Phi.jpg 720w, https://thuytranthuy.com/wp-content/uploads/2021/07/Dich-ta-lon-chau-Phi-400x400.jpg 400w, https://thuytranthuy.com/wp-content/uploads/2021/07/Dich-ta-lon-chau-Phi-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2021/07/Dich-ta-lon-chau-Phi-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2021/07/Dich-ta-lon-chau-Phi-600x600.jpg 600w, https://thuytranthuy.com/wp-content/uploads/2021/07/Dich-ta-lon-chau-Phi-100x100.jpg 100w" sizes="(max-width: 720px) 100vw, 720px" />						
+					</div>
+								
+<style>
+#image_18122697 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-1033320499" class="col medium-4 small-7 large-4"  >
+		<div class="col-inner"  >
+			
+			
+
+<h3>Cách phòng b?nh d?ch t? l?n châu Phi</h3>
+<p>Hu?ng d?n bà con ch?n doán b?nh tích, cách phòng tránh và bi?n pháp d?p d?ch, v? sinh chu?ng tr?i cho l?a heo sau</p>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-551836317" class="col medium-6 small-5 large-6"  >
+		<div class="col-inner"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_165503306">
+								<div class="img-inner dark" >
+			<img loading="lazy" decoding="async" width="720" height="720" src="https://thuytranthuy.com/wp-content/uploads/2021/07/ho-hap-phuc-hop.jpg" class="attachment-large size-large" alt="" srcset="https://thuytranthuy.com/wp-content/uploads/2021/07/ho-hap-phuc-hop.jpg 720w, https://thuytranthuy.com/wp-content/uploads/2021/07/ho-hap-phuc-hop-400x400.jpg 400w, https://thuytranthuy.com/wp-content/uploads/2021/07/ho-hap-phuc-hop-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2021/07/ho-hap-phuc-hop-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2021/07/ho-hap-phuc-hop-600x600.jpg 600w, https://thuytranthuy.com/wp-content/uploads/2021/07/ho-hap-phuc-hop-100x100.jpg 100w" sizes="(max-width: 720px) 100vw, 720px" />						
+					</div>
+								
+<style>
+#image_165503306 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-1267090947" class="col medium-6 small-7 large-6"  >
+		<div class="col-inner"  >
+			
+			
+
+	<div id="gap-1750645798" class="gap-element clearfix show-for-medium" style="display:block; height:auto;">
+		
+<style>
+#gap-1750645798 {
+  padding-top: 30px;
+}
+</style>
+	</div>
+	
+
+<h3>L?n b? ho, th? gi?t, th? hóp b?ng, s?t h?ng r?c… ch?a sao dây?</h3>
+<p>Tri?u tr?ng di?n hình c?a b?nh hô h?p ph?c h?p: l?n ho dau ph?i, s?t cao, th? hóp b?ng, ng?i ki?u chó&#8230;</p>
+
+		</div>
+			</div>
+
+	
+
+</div>
+	<div id="gap-1531284037" class="gap-element clearfix" style="display:block; height:auto;">
+		
+<style>
+#gap-1531284037 {
+  padding-top: 30px;
+}
+</style>
+	</div>
+	
+
+<div class="row row-divided hide-for-medium"  id="row-252298040">
+
+
+	<div id="col-86570577" class="col medium-4 small-12 large-4"  data-animate="fadeInRight">
+		<div class="col-inner"  >
+			
+			
+
+<h5 class="uppercase"><a href="https://thuytranthuy.com/chan-nuoi-lon/benh-sa-ruot-o-lon/">K? thu?t m? herni b?n trên heo con (b?nh sa ru?t)</a></h5>
+<p><a href="https://thuytranthuy.com/chan-nuoi-lon/benh-sa-ruot-o-lon/">Hu?ng d?n ph?u thu?t l?n b? sa ru?t herni ? b?n thành công 100%</a></p>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-190214166" class="col medium-4 small-12 large-4"  data-animate="fadeInRight">
+		<div class="col-inner"  >
+			
+			
+
+<h5 class="uppercase"><a href="https://youtu.be/dSrnCSL4tvk">B?nh d?ch t? l?n c? di?n | Tri?u ch?ng và cách di?u tr?</a></h5>
+<p>Hu?ng d?n ch?n doán và phác d? di?u tr? b?nh d?ch t? l?n c? di?n</p>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-614118792" class="col medium-4 small-12 large-4"  data-animate="fadeInRight">
+		<div class="col-inner"  >
+			
+			
+
+<h5 class="uppercase"><a href="https://youtu.be/Psn8j8y1d5Y">Cách ch?a l?n con b? tiêu ch?y, s?t cao, phân vàng</a></h5>
+<p>Hu?ng d?n di?u tr? dàn heo con theo m? b? tiêu ch?y ghép hô h?p</p>
+
+		</div>
+			</div>
+
+	
+
+
+<style>
+#row-252298040 > .col > .col-inner {
+  padding: 0px 0px 0px 0px;
+}
+</style>
+</div>
+<div class="row row-collapse show-for-medium"  id="row-1327010860">
+
+
+	<div id="col-1945676403" class="col medium-4 small-12 large-4"  data-animate="fadeInRight">
+		<div class="col-inner"  >
+			
+			
+
+<h5><a href="https://youtu.be/-JxgDOrGrpg">? K? thu?t m? herni b?n trên heo con (b?nh sa ru?t)</a></h5>
+<p>Hu?ng d?n ph?u thu?t l?n b? sa ru?t herni ? b?n thành công 100%</p>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-470780316" class="col medium-4 small-12 large-4"  data-animate="fadeInRight">
+		<div class="col-inner"  >
+			
+			
+
+<h5><a href="https://youtu.be/dSrnCSL4tvk">? B?nh d?ch t? l?n c? di?n | Tri?u ch?ng và cách di?u tr?</a></h5>
+<p>Hu?ng d?n ch?n doán và phác d? di?u tr? b?nh d?ch t? l?n c? di?n</p>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-211696871" class="col medium-4 small-12 large-4"  data-animate="fadeInRight">
+		<div class="col-inner"  >
+			
+			
+
+<h5><a href="https://youtu.be/Psn8j8y1d5Y">? Cách ch?a l?n con b? tiêu ch?y, s?t cao, phân vàng</a></h5>
+<p>Hu?ng d?n di?u tr? dàn heo con theo m? b? tiêu ch?y ghép hô h?p</p>
+
+		</div>
+			</div>
+
+	
+
+
+<style>
+#row-1327010860 > .col > .col-inner {
+  padding: 0px 0px 0px 0px;
+}
+</style>
+</div>
+<div class="row row-collapse show-for-medium"  id="row-520275868">
+
+
+	<div id="col-292260650" class="col small-12 large-12"  data-animate="fadeInRight">
+		<div class="col-inner"  >
+			
+			
+
+<ul>
+<li><a href="https://youtu.be/5IfOBS5F9Bk">L?n b? ho, th? gi?t, th? hóp b?ng, s?t h?ng r?c… ch?a sao dây?</a></li>
+<li><a href="https://youtu.be/twDXw1Il-Vo">B?nh Circo | H?i ch?ng còi c?c ? l?n con</a></li>
+<li><a href="https://youtu.be/pDDmwicuZy0">B?nh viêm ph?i dính su?n trên heo</a></li>
+<li><a href="https://youtu.be/919vljyg9to">Ði?u tr? b?nh Tai xanh | H?i ch?ng r?i lo?n sinh s?n và hô h?p ? l?n</a></li>
+</ul>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-466207838" class="col small-12 large-12"  data-animate="fadeInRight">
+		<div class="col-inner"  >
+			
+			
+
+<ul>
+<li><a href="https://youtu.be/vn0VoAaqeos">Heo b? tiêu ch?y | Cách di?u tr? b?nh tiêu ch?y c?p PED ? l?n</a></li>
+<li><a href="https://youtu.be/PP64QJp_HKs">Ði?u tr? PRDC &#8211; b?nh hô h?p ph?c h?p ? l?n</a></li>
+<li><a href="https://youtu.be/QA1fWLvYBhE">B?nh l? m?m long móng ? l?n | Phuong pháp di?u tr?</a></li>
+<li><a href="https://youtu.be/xkb7nfsSr6E">L?n nái b? viêm t? cung | H?i ch?ng MMA trên heo</a></li>
+</ul>
+
+		</div>
+			</div>
+
+	
+
+</div>
+<a data-animate="fadeInRight" href="/chan-nuoi-lon/" target="_self" class="button success is-outline"  style="border-radius:99px;">
+    <span>Xem thêm</span>
+  <i class="icon-play" ></i></a>
+
+
+	<div id="gap-713308126" class="gap-element clearfix" style="display:block; height:auto;">
+		
+<style>
+#gap-713308126 {
+  padding-top: 30px;
+}
+</style>
+	</div>
+	
+
+<div class="container section-title-container" ><h2 class="section-title section-title-normal"><b></b><span class="section-title-main" >Chan nuôi gà</span><b></b><a href="https://thuytranthuy.com/chan-nuoi-ga" target=""><i class="icon-angle-right" ></i></a></h2></div>
+
+<div class="row row-large"  id="row-1105288028">
+
+
+	<div id="col-243887053" class="col medium-5 small-12 large-5"  >
+		<div class="col-inner"  >
+			
+			
+
+<h4>Cách úm gà con m?i n? | Mô hình chu?ng úm 1000 con gà</h4>
+<p>K? thu?t úm gà con 1 ngày tu?i thành công 100% trong mùa dông, cách làm chu?ng úm d?c dáo, di?u ch?nh nhi?t d? h?p lý</p>
+<div class="video video-fit mb" style="padding-top:51%;"><p><iframe loading="lazy" title="Cách úm gà con m?i n? | K? thu?t úm gà con 1 ngày tu?i" width="1020" height="574" src="https://www.youtube.com/embed/BuHuBjqmd7U?start=358&#038;feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</div>
+
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-1563264685" class="col medium-7 small-12 large-7"  >
+		<div class="col-inner"  >
+			
+			
+
+<div class="row row-small"  id="row-1708882402">
+
+
+	<div id="col-2113458744" class="col medium-6 small-12 large-6"  >
+		<div class="col-inner"  >
+			
+			
+
+<h4>Hu?ng d?n pha men tiêu hóa cho gà úm 4 ngày tu?i</h4>
+<p>Trong khi úm gà, thu?c gi?i d?c gan li?u có pha chung v?i men tiêu hóa du?c không? Ðó là câu h?i mà r?t nhi?u bà con nông dân dã g?i t?i h?i mình&#8230;</p>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-2038494028" class="col medium-6 small-12 large-6"  >
+		<div class="col-inner"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1868716924">
+								<div class="img-inner dark" >
+			<img loading="lazy" decoding="async" width="711" height="400" src="https://thuytranthuy.com/wp-content/uploads/2021/07/huong-dan-pha-men-tieu-hoa-cho-ga-um-4-ngay-tuoi-711x400.jpg" class="attachment-medium size-medium" alt="Hu?ng d?n pha men tiêu hóa cho gà úm 4 ngày tu?i" srcset="https://thuytranthuy.com/wp-content/uploads/2021/07/huong-dan-pha-men-tieu-hoa-cho-ga-um-4-ngay-tuoi-711x400.jpg 711w, https://thuytranthuy.com/wp-content/uploads/2021/07/huong-dan-pha-men-tieu-hoa-cho-ga-um-4-ngay-tuoi-768x432.jpg 768w, https://thuytranthuy.com/wp-content/uploads/2021/07/huong-dan-pha-men-tieu-hoa-cho-ga-um-4-ngay-tuoi-600x338.jpg 600w, https://thuytranthuy.com/wp-content/uploads/2021/07/huong-dan-pha-men-tieu-hoa-cho-ga-um-4-ngay-tuoi.jpg 1280w" sizes="(max-width: 711px) 100vw, 711px" />						
+					</div>
+								
+<style>
+#image_1868716924 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+
+
+		</div>
+			</div>
+
+	
+
+</div>
+	<div id="gap-757436690" class="gap-element clearfix" style="display:block; height:auto;">
+		
+<style>
+#gap-757436690 {
+  padding-top: 20px;
+}
+</style>
+	</div>
+	
+
+<div class="row row-small"  id="row-1585463068">
+
+
+	<div id="col-193047596" class="col medium-6 small-12 large-6"  >
+		<div class="col-inner"  >
+			
+			
+
+<h4>Hu?ng d?n pha ch? v?c xin c?u trùng trên gà con m?i n?</h4>
+<p>Quy trình làm vaccine c?u trùng khi úm gà du?c 4 ngày tu?i, phuong pháp pha ch? v?c xin d?ng nu?c an toàn v? sinh, d?t hi?u qu? cao</p>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-1034876450" class="col medium-6 small-12 large-6"  >
+		<div class="col-inner"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_2116583629">
+								<div class="img-inner dark" >
+			<img loading="lazy" decoding="async" width="711" height="400" src="https://thuytranthuy.com/wp-content/uploads/2021/07/pha-che-vac-xin-cau-trung-ga-711x400.jpg" class="attachment-medium size-medium" alt="V?c xin c?u trùng trên gà con m?i n? | Hu?ng d?n pha ch?" srcset="https://thuytranthuy.com/wp-content/uploads/2021/07/pha-che-vac-xin-cau-trung-ga-711x400.jpg 711w, https://thuytranthuy.com/wp-content/uploads/2021/07/pha-che-vac-xin-cau-trung-ga-768x432.jpg 768w, https://thuytranthuy.com/wp-content/uploads/2021/07/pha-che-vac-xin-cau-trung-ga-600x338.jpg 600w, https://thuytranthuy.com/wp-content/uploads/2021/07/pha-che-vac-xin-cau-trung-ga.jpg 1280w" sizes="(max-width: 711px) 100vw, 711px" />						
+					</div>
+								
+<style>
+#image_2116583629 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+
+
+		</div>
+			</div>
+
+	
+
+</div>
+
+		</div>
+			</div>
+
+	
+
+</div>
+<div class="row"  id="row-1634227237">
+
+
+	<div id="col-926389571" class="col medium-6 small-12 large-6"  data-animate="fadeInRight">
+		<div class="col-inner"  >
+			
+			
+
+<ul>
+<li>
+<h5><a href="https://youtu.be/Qk_pWlh7TUU">B?nh t? huy?t trùng ? gà</a></h5>
+</li>
+<li>
+<h5><a href="https://youtu.be/MDl1R96hJOo">B?nh Gumboro trên gà</a></h5>
+</li>
+<li>
+<h5><a href="https://youtu.be/yXquBykQPZM">B?nh Coryza &#8211; sung phù d?u trên gà</a></h5>
+</li>
+</ul>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-1590282600" class="col medium-6 small-12 large-6"  data-animate="fadeInRight">
+		<div class="col-inner"  >
+			
+			
+
+<ul>
+<li>
+<h5><a href="https://youtu.be/5I4PUahhWzY">Ecoli kéo màng ? gà</a></h5>
+</li>
+<li>
+<h5><a href="https://youtu.be/7ui7tEDtgN8">Hen ILT ghép Ecoli và n?m h?ng ? gà</a></h5>
+</li>
+<li>
+<h5><a href="https://youtu.be/zlEgAeFZKGw">Ch? tr?i gà giàu to nh? áp d?ng mô hình k? thu?t nuôi gà&#8230;</a></h5>
+</li>
+</ul>
+
+		</div>
+			</div>
+
+	
+
+</div>
+<a data-animate="fadeInRight" href="/chan-nuoi-ga/" target="_self" class="button success is-outline"  style="border-radius:99px;">
+    <span>Xem thêm</span>
+  <i class="icon-play" ></i></a>
+
+
+	<div id="gap-193573122" class="gap-element clearfix" style="display:block; height:auto;">
+		
+<style>
+#gap-193573122 {
+  padding-top: 30px;
+}
+</style>
+	</div>
+	
+
+<div class="container section-title-container" ><h2 class="section-title section-title-normal"><b></b><span class="section-title-main" >Chan nuôi trâu bò</span><b></b><a href="#" target=""><i class="icon-angle-right" ></i></a></h2></div>
+
+<div class="row row-large"  id="row-1022298332">
+
+
+	<div id="col-1191437915" class="col medium-5 small-12 large-5"  >
+		<div class="col-inner"  >
+			
+			
+
+<h4><a href="https://thuytranthuy.com/chan-nuoi-lon/benh-viem-da-noi-cuc-tren-trau-bo/">Cách di?u tr? b?nh viêm da n?i c?c trên trâu bò</a></h4>
+<p><a href="https://thuytranthuy.com/chan-nuoi-lon/benh-viem-da-noi-cuc-tren-trau-bo/">Viêm da n?i c?c hay còn g?i là b?nh d?u trên trâu bò, gây nên b?i virus thu?c h? Poxviridae, làm cho v?t nuôi b? an, g?y y?u, x?y thai&#8230;</a></p>
+<div class="video video-fit mb" style="padding-top:51%;"><p><iframe loading="lazy" title="Cách ch?a b?nh viêm da n?i c?c trên trâu bò" width="1020" height="574" src="https://www.youtube.com/embed/zKXQK7ytICA?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</div>
+
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-392544331" class="col medium-7 small-12 large-7"  >
+		<div class="col-inner"  >
+			
+			
+
+<div class="row row-small"  id="row-799869823">
+
+
+	<div id="col-1741415891" class="col medium-6 small-12 large-6"  >
+		<div class="col-inner"  >
+			
+			
+
+<h4><a href="https://youtu.be/PaQiUzGGVz8">X? s?o mui trâu bò theo phuong pháp dân gian</a></h4>
+<p><a href="https://youtu.be/PaQiUzGGVz8">Cách x? mui trâu bò don gi?n ít gây ch?y máu</a></p>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-160849537" class="col medium-6 small-12 large-6"  >
+		<div class="col-inner"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_957140829">
+								<div class="img-inner dark" >
+			<img loading="lazy" decoding="async" width="711" height="400" src="https://thuytranthuy.com/wp-content/uploads/2021/09/xo-seo-mui-trau-bo-711x400.jpg" class="attachment-medium size-medium" alt="X? s?o mui trâu bò" srcset="https://thuytranthuy.com/wp-content/uploads/2021/09/xo-seo-mui-trau-bo-711x400.jpg 711w, https://thuytranthuy.com/wp-content/uploads/2021/09/xo-seo-mui-trau-bo-768x432.jpg 768w, https://thuytranthuy.com/wp-content/uploads/2021/09/xo-seo-mui-trau-bo-600x338.jpg 600w, https://thuytranthuy.com/wp-content/uploads/2021/09/xo-seo-mui-trau-bo.jpg 1280w" sizes="(max-width: 711px) 100vw, 711px" />						
+					</div>
+								
+<style>
+#image_957140829 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+
+
+		</div>
+			</div>
+
+	
+
+</div>
+	<div id="gap-243053383" class="gap-element clearfix" style="display:block; height:auto;">
+		
+<style>
+#gap-243053383 {
+  padding-top: 20px;
+}
+</style>
+	</div>
+	
+
+<div class="row row-small"  id="row-568121871">
+
+
+	<div id="col-732399938" class="col medium-6 small-12 large-6"  >
+		<div class="col-inner"  >
+			
+			
+
+<h4><a href="https://youtu.be/CjdzGiTP0Ps">Cách d? d? cho bò | K? thu?t x? lý bò b? xo?n d? con</a></h4>
+<p><a href="https://youtu.be/CjdzGiTP0Ps">Hu?ng d?n x? lý tình hu?ng khi bò khó d?</a></p>
+
+		</div>
+			</div>
+
+	
+
+	<div id="col-380976580" class="col medium-6 small-12 large-6"  >
+		<div class="col-inner"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1481798287">
+								<div class="img-inner dark" >
+			<img loading="lazy" decoding="async" width="711" height="400" src="https://thuytranthuy.com/wp-content/uploads/2021/09/do-de-bo-711x400.jpg" class="attachment-medium size-medium" alt="" srcset="https://thuytranthuy.com/wp-content/uploads/2021/09/do-de-bo-711x400.jpg 711w, https://thuytranthuy.com/wp-content/uploads/2021/09/do-de-bo-768x432.jpg 768w, https://thuytranthuy.com/wp-content/uploads/2021/09/do-de-bo-600x338.jpg 600w, https://thuytranthuy.com/wp-content/uploads/2021/09/do-de-bo.jpg 1280w" sizes="(max-width: 711px) 100vw, 711px" />						
+					</div>
+								
+<style>
+#image_1481798287 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+
+
+		</div>
+			</div>
+
+	
+
+</div>
+
+		</div>
+			</div>
+
+	
+
+</div>
+	<div id="gap-112179057" class="gap-element clearfix" style="display:block; height:auto;">
+		
+<style>
+#gap-112179057 {
+  padding-top: 30px;
+}
+</style>
+	</div>
+	
+
+<div class="container section-title-container" ><h2 class="section-title section-title-normal"><b></b><span class="section-title-main" >Thu?c thú y</span><b></b><a href="https://thuytranthuy.com/thuoc-thu-y/" target=""><i class="icon-angle-right" ></i></a></h2></div>
+
+<div class="woocommerce columns-4 "><div class="products row row-small large-columns-4 medium-columns-3 small-columns-2">
+
+<div class="product-small col has-hover product type-product post-1946 status-publish first instock product_cat-thuoc-thu-y has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<div class="col-inner">
+	
+<div class="badge-container absolute left top z-1">
+</div>
+	<div class="product-small box ">
+		<div class="box-image">
+			<div class="image-fade_in_back">
+				<a href="https://thuytranthuy.com/san-pham/amox-colis/">
+					<img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2021/12/amox-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Amox colis" srcset="https://thuytranthuy.com/wp-content/uploads/2021/12/amox-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2021/12/amox-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2021/12/amox-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" /><img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2021/12/thuoc-khang-sinh-amox-300x300.jpg" class="show-on-hover absolute fill hide-for-small back-image" alt="Thu?c kháng sinh Amox 20%" srcset="https://thuytranthuy.com/wp-content/uploads/2021/12/thuoc-khang-sinh-amox-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2021/12/thuoc-khang-sinh-amox-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2021/12/thuoc-khang-sinh-amox-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" />				</a>
+			</div>
+			<div class="image-tools is-small top right show-on-hover">
+							</div>
+			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
+							</div>
+			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+				  <a class="quick-view" data-prod="1946" href="#quick-view">Quick View</a>			</div>
+					</div>
+
+		<div class="box-text box-text-products">
+			<div class="title-wrapper">		<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+			Thu?c thú y		</p>
+	<p class="name product-title woocommerce-loop-product__title"><a href="https://thuytranthuy.com/san-pham/amox-colis/">Amox colis thu?c kháng sinh d?ng h?t hòa tan</a></p></div><div class="price-wrapper">
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>550.000<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+</div>		</div>
+	</div>
+		</div>
+</div>
+
+<div class="product-small col has-hover product type-product post-1929 status-publish instock product_cat-thuoc-thu-y has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<div class="col-inner">
+	
+<div class="badge-container absolute left top z-1">
+</div>
+	<div class="product-small box ">
+		<div class="box-image">
+			<div class="image-fade_in_back">
+				<a href="https://thuytranthuy.com/san-pham/benkomax/">
+					<img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2021/12/cnc-benkomax-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Thu?c sát trùng CNC Benkomax" srcset="https://thuytranthuy.com/wp-content/uploads/2021/12/cnc-benkomax-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2021/12/cnc-benkomax-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2021/12/cnc-benkomax-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" /><img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2021/12/thuoc-sat-trung-pho-rong-benkomax-300x300.jpg" class="show-on-hover absolute fill hide-for-small back-image" alt="" srcset="https://thuytranthuy.com/wp-content/uploads/2021/12/thuoc-sat-trung-pho-rong-benkomax-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2021/12/thuoc-sat-trung-pho-rong-benkomax-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2021/12/thuoc-sat-trung-pho-rong-benkomax-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" />				</a>
+			</div>
+			<div class="image-tools is-small top right show-on-hover">
+							</div>
+			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
+							</div>
+			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+				  <a class="quick-view" data-prod="1929" href="#quick-view">Quick View</a>			</div>
+					</div>
+
+		<div class="box-text box-text-products">
+			<div class="title-wrapper">		<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+			Thu?c thú y		</p>
+	<p class="name product-title woocommerce-loop-product__title"><a href="https://thuytranthuy.com/san-pham/benkomax/">Benkomax | Thu?c sát trùng ph? r?ng | Thú y Tr?n Thúy</a></p></div><div class="price-wrapper">
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>570.000<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+</div>		</div>
+	</div>
+		</div>
+</div>
+
+<div class="product-small col has-hover product type-product post-2134 status-publish instock product_cat-thuoc-thu-y has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<div class="col-inner">
+	
+<div class="badge-container absolute left top z-1">
+</div>
+	<div class="product-small box ">
+		<div class="box-image">
+			<div class="image-fade_in_back">
+				<a href="https://thuytranthuy.com/san-pham/cam-tieu-chay-cap/">
+					<img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2022/06/cam-tieu-chay-cap-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="C?m tiêu ch?y c?p" srcset="https://thuytranthuy.com/wp-content/uploads/2022/06/cam-tieu-chay-cap-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2022/06/cam-tieu-chay-cap-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2022/06/cam-tieu-chay-cap-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" /><img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2022/06/Coli-72H_Cam-tieu-chay-cap-300x300.jpg" class="show-on-hover absolute fill hide-for-small back-image" alt="Coli 72H" srcset="https://thuytranthuy.com/wp-content/uploads/2022/06/Coli-72H_Cam-tieu-chay-cap-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2022/06/Coli-72H_Cam-tieu-chay-cap-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2022/06/Coli-72H_Cam-tieu-chay-cap-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" />				</a>
+			</div>
+			<div class="image-tools is-small top right show-on-hover">
+							</div>
+			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
+							</div>
+			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+				  <a class="quick-view" data-prod="2134" href="#quick-view">Quick View</a>			</div>
+					</div>
+
+		<div class="box-text box-text-products">
+			<div class="title-wrapper">		<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+			Thu?c thú y		</p>
+	<p class="name product-title woocommerce-loop-product__title"><a href="https://thuytranthuy.com/san-pham/cam-tieu-chay-cap/">C?m tiêu ch?y c?p | Ð?c tr? tiêu ch?y, t? huy?t trùng trên gia súc, gia c?m</a></p></div><div class="price-wrapper">
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>350.000<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+</div>		</div>
+	</div>
+		</div>
+</div>
+
+<div class="product-small col has-hover product type-product post-1569 status-publish last instock product_cat-thuoc-thu-y has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<div class="col-inner">
+	
+<div class="badge-container absolute left top z-1">
+</div>
+	<div class="product-small box ">
+		<div class="box-image">
+			<div class="image-fade_in_back">
+				<a href="https://thuytranthuy.com/san-pham/tiamulin/">
+					<img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2021/08/Tiamulin-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Tiamulin - thu?c kháng sinh d?ng b?t hòa tan" srcset="https://thuytranthuy.com/wp-content/uploads/2021/08/Tiamulin-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2021/08/Tiamulin-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2021/08/Tiamulin-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" /><img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2021/08/Tiamulin-2-300x300.jpg" class="show-on-hover absolute fill hide-for-small back-image" alt="" srcset="https://thuytranthuy.com/wp-content/uploads/2021/08/Tiamulin-2-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2021/08/Tiamulin-2-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2021/08/Tiamulin-2-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" />				</a>
+			</div>
+			<div class="image-tools is-small top right show-on-hover">
+							</div>
+			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
+							</div>
+			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+				  <a class="quick-view" data-prod="1569" href="#quick-view">Quick View</a>			</div>
+					</div>
+
+		<div class="box-text box-text-products">
+			<div class="title-wrapper">		<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+			Thu?c thú y		</p>
+	<p class="name product-title woocommerce-loop-product__title"><a href="https://thuytranthuy.com/san-pham/tiamulin/">Tiamulin | Thu?c kháng sinh d?ng b?t hòa tan</a></p></div><div class="price-wrapper">
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>400.000<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+</div>		</div>
+	</div>
+		</div>
+</div>
+</div><!-- row --></div>
+
+<a data-animate="fadeInRight" href="/thuoc-thu-y/" target="_self" class="button success is-outline"  style="border-radius:99px;">
+    <span>Xem thêm</span>
+  <i class="icon-play" ></i></a>
+
+
+	<div id="gap-1507717439" class="gap-element clearfix" style="display:block; height:auto;">
+		
+<style>
+#gap-1507717439 {
+  padding-top: 30px;
+}
+</style>
+	</div>
+	
+
+<div class="container section-title-container" ><h2 class="section-title section-title-normal"><b></b><span class="section-title-main" >Ch? ph?m sinh h?c</span><b></b><a href="https://thuytranthuy.com/che-pham-sinh-hoc-trong-chan-nuoi/" target=""><i class="icon-angle-right" ></i></a></h2></div>
+
+<div class="woocommerce columns-4 "><div class="products row row-small large-columns-4 medium-columns-3 small-columns-2">
+
+<div class="product-small col has-hover product type-product post-2151 status-publish first instock product_cat-che-pham-sinh-hoc has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<div class="col-inner">
+	
+<div class="badge-container absolute left top z-1">
+</div>
+	<div class="product-small box ">
+		<div class="box-image">
+			<div class="image-fade_in_back">
+				<a href="https://thuytranthuy.com/san-pham/phuc-hoi-long-nhung/">
+					<img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2022/09/phuc-hoi-long-nhung-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Ph?c h?i lông nhung" srcset="https://thuytranthuy.com/wp-content/uploads/2022/09/phuc-hoi-long-nhung-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2022/09/phuc-hoi-long-nhung-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2022/09/phuc-hoi-long-nhung-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" /><img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2022/09/phuc-hoi-long-nhung-4-300x300.jpg" class="show-on-hover absolute fill hide-for-small back-image" alt="Stop tiêu ch?y" srcset="https://thuytranthuy.com/wp-content/uploads/2022/09/phuc-hoi-long-nhung-4-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2022/09/phuc-hoi-long-nhung-4-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2022/09/phuc-hoi-long-nhung-4-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" />				</a>
+			</div>
+			<div class="image-tools is-small top right show-on-hover">
+							</div>
+			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
+							</div>
+			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+				  <a class="quick-view" data-prod="2151" href="#quick-view">Quick View</a>			</div>
+					</div>
+
+		<div class="box-text box-text-products">
+			<div class="title-wrapper">		<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+			Ch? ph?m sinh h?c		</p>
+	<p class="name product-title woocommerce-loop-product__title"><a href="https://thuytranthuy.com/san-pham/phuc-hoi-long-nhung/">Ch? ph?m ph?c h?i lông nhung làm dày thành ru?t cho v?t nuôi</a></p></div><div class="price-wrapper">
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>760.000<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+</div>		</div>
+	</div>
+		</div>
+</div>
+
+<div class="product-small col has-hover product type-product post-1727 status-publish instock product_cat-che-pham-sinh-hoc has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<div class="col-inner">
+	
+<div class="badge-container absolute left top z-1">
+</div>
+	<div class="product-small box ">
+		<div class="box-image">
+			<div class="image-fade_in_back">
+				<a href="https://thuytranthuy.com/san-pham/gluco-kc/">
+					<img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2021/09/gluco-k-c-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Gluco KC TD th?o du?c" srcset="https://thuytranthuy.com/wp-content/uploads/2021/09/gluco-k-c-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2021/09/gluco-k-c-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2021/09/gluco-k-c-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" /><img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2021/09/gluco-k-c_TD-300x300.jpg" class="show-on-hover absolute fill hide-for-small back-image" alt="Gluco KC th?o du?c" srcset="https://thuytranthuy.com/wp-content/uploads/2021/09/gluco-k-c_TD-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2021/09/gluco-k-c_TD-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2021/09/gluco-k-c_TD-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" />				</a>
+			</div>
+			<div class="image-tools is-small top right show-on-hover">
+							</div>
+			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
+							</div>
+			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+				  <a class="quick-view" data-prod="1727" href="#quick-view">Quick View</a>			</div>
+					</div>
+
+		<div class="box-text box-text-products">
+			<div class="title-wrapper">		<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+			Ch? ph?m sinh h?c		</p>
+	<p class="name product-title woocommerce-loop-product__title"><a href="https://thuytranthuy.com/san-pham/gluco-kc/">Gluco KC th?o du?c | H? s?t &#8211; h?i s?c &#8211; tiêu viêm</a></p></div><div class="price-wrapper">
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>100.000<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+</div>		</div>
+	</div>
+		</div>
+</div>
+
+<div class="product-small col has-hover product type-product post-1738 status-publish instock product_cat-che-pham-sinh-hoc has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<div class="col-inner">
+	
+<div class="badge-container absolute left top z-1">
+</div>
+	<div class="product-small box ">
+		<div class="box-image">
+			<div class="image-fade_in_back">
+				<a href="https://thuytranthuy.com/san-pham/khang-the-cho-heo/">
+					<img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2021/09/khang-the-gamma-globulin-scaled-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Kháng th? Gamma Globulin" srcset="https://thuytranthuy.com/wp-content/uploads/2021/09/khang-the-gamma-globulin-scaled-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2021/09/khang-the-gamma-globulin-scaled-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2021/09/khang-the-gamma-globulin-scaled-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" /><img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2021/09/khang-the-da-dong-cho-heo-300x300.jpg" class="show-on-hover absolute fill hide-for-small back-image" alt="Kháng th? da dòng cho heo" srcset="https://thuytranthuy.com/wp-content/uploads/2021/09/khang-the-da-dong-cho-heo-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2021/09/khang-the-da-dong-cho-heo-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2021/09/khang-the-da-dong-cho-heo-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" />				</a>
+			</div>
+			<div class="image-tools is-small top right show-on-hover">
+							</div>
+			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
+							</div>
+			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+				  <a class="quick-view" data-prod="1738" href="#quick-view">Quick View</a>			</div>
+					</div>
+
+		<div class="box-text box-text-products">
+			<div class="title-wrapper">		<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+			Ch? ph?m sinh h?c		</p>
+	<p class="name product-title woocommerce-loop-product__title"><a href="https://thuytranthuy.com/san-pham/khang-the-cho-heo/">Kháng th? cho heo Gamma Globulin CNC Pig-01</a></p></div><div class="price-wrapper">
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>210.000<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+</div>		</div>
+	</div>
+		</div>
+</div>
+
+<div class="product-small col has-hover product type-product post-1560 status-publish last instock product_cat-che-pham-sinh-hoc has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<div class="col-inner">
+	
+<div class="badge-container absolute left top z-1">
+</div>
+	<div class="product-small box ">
+		<div class="box-image">
+			<div class="image-fade_in_back">
+				<a href="https://thuytranthuy.com/san-pham/sua-danh-cho-heo-con-moi-de/">
+					<img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2021/08/sua-cho-lon-con-pigpro-milk_2-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="s?a dành cho heo con m?i d?" srcset="https://thuytranthuy.com/wp-content/uploads/2021/08/sua-cho-lon-con-pigpro-milk_2-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2021/08/sua-cho-lon-con-pigpro-milk_2-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2021/08/sua-cho-lon-con-pigpro-milk_2-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" /><img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2021/08/sua-cho-lon-con-pigpro-milk-300x300.jpg" class="show-on-hover absolute fill hide-for-small back-image" alt="s?a b?t dành cho heo con" srcset="https://thuytranthuy.com/wp-content/uploads/2021/08/sua-cho-lon-con-pigpro-milk-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2021/08/sua-cho-lon-con-pigpro-milk-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2021/08/sua-cho-lon-con-pigpro-milk-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" />				</a>
+			</div>
+			<div class="image-tools is-small top right show-on-hover">
+							</div>
+			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
+							</div>
+			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+				  <a class="quick-view" data-prod="1560" href="#quick-view">Quick View</a>			</div>
+					</div>
+
+		<div class="box-text box-text-products">
+			<div class="title-wrapper">		<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+			Ch? ph?m sinh h?c		</p>
+	<p class="name product-title woocommerce-loop-product__title"><a href="https://thuytranthuy.com/san-pham/sua-danh-cho-heo-con-moi-de/">S?a dành cho heo con m?i d?, dang cai s?a</a></p></div><div class="price-wrapper">
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>200.000<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+</div>		</div>
+	</div>
+		</div>
+</div>
+</div><!-- row --></div>
+
+<a data-animate="fadeInRight" href="/che-pham-sinh-hoc-trong-chan-nuoi/" target="_self" class="button success is-outline"  style="border-radius:99px;">
+    <span>Xem thêm</span>
+  <i class="icon-play" ></i></a>
+
+
+	<div id="gap-1070008367" class="gap-element clearfix" style="display:block; height:auto;">
+		
+<style>
+#gap-1070008367 {
+  padding-top: 30px;
+}
+</style>
+	</div>
+	
+
+<div class="container section-title-container" ><h2 class="section-title section-title-normal"><b></b><span class="section-title-main" >? D?ng c? chan nuôi</span><b></b><a href="/dung-cu-chan-nuoi/" target=""><i class="icon-angle-right" ></i></a></h2></div>
+
+<div class="woocommerce columns-4 "><div class="products row row-small large-columns-4 medium-columns-3 small-columns-2">
+
+<div class="product-small col has-hover product type-product post-1599 status-publish first instock product_cat-dung-cu-chan-nuoi has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<div class="col-inner">
+	
+<div class="badge-container absolute left top z-1">
+</div>
+	<div class="product-small box ">
+		<div class="box-image">
+			<div class="image-fade_in_back">
+				<a href="https://thuytranthuy.com/san-pham/dao-thien-heo/">
+					<img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2021/08/dao-thien-heo_3-scaled-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Dao thi?n heo" srcset="https://thuytranthuy.com/wp-content/uploads/2021/08/dao-thien-heo_3-scaled-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2021/08/dao-thien-heo_3-scaled-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2021/08/dao-thien-heo_3-scaled-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" /><img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2021/08/dao-thien-heo-300x300.jpg" class="show-on-hover absolute fill hide-for-small back-image" alt="" srcset="https://thuytranthuy.com/wp-content/uploads/2021/08/dao-thien-heo-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2021/08/dao-thien-heo-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2021/08/dao-thien-heo-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" />				</a>
+			</div>
+			<div class="image-tools is-small top right show-on-hover">
+							</div>
+			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
+							</div>
+			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+				  <a class="quick-view" data-prod="1599" href="#quick-view">Quick View</a>			</div>
+					</div>
+
+		<div class="box-text box-text-products">
+			<div class="title-wrapper">		<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+			D?ng c? chan nuôi		</p>
+	<p class="name product-title woocommerce-loop-product__title"><a href="https://thuytranthuy.com/san-pham/dao-thien-heo/">Dao thi?n heo siêu s?c kèm 6 lu?i thay th?</a></p></div><div class="price-wrapper">
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>70.000<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+</div>		</div>
+	</div>
+		</div>
+</div>
+
+<div class="product-small col has-hover product type-product post-2004 status-publish instock product_cat-uncategorized has-post-thumbnail shipping-taxable product-type-simple">
+	<div class="col-inner">
+	
+<div class="badge-container absolute left top z-1">
+</div>
+	<div class="product-small box ">
+		<div class="box-image">
+			<div class="image-fade_in_back">
+				<a href="https://thuytranthuy.com/san-pham/kim-bam-duoi-lon/">
+					<img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2022/02/kim-bam-duoi-lon-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Kìm b?m duôi l?n con ch?t lu?ng cao" srcset="https://thuytranthuy.com/wp-content/uploads/2022/02/kim-bam-duoi-lon-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2022/02/kim-bam-duoi-lon-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2022/02/kim-bam-duoi-lon-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" /><img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2022/02/kim-bam-duoi-300x300.jpg" class="show-on-hover absolute fill hide-for-small back-image" alt="Kìm di?n b?m duôi heo" srcset="https://thuytranthuy.com/wp-content/uploads/2022/02/kim-bam-duoi-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2022/02/kim-bam-duoi-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2022/02/kim-bam-duoi-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" />				</a>
+			</div>
+			<div class="image-tools is-small top right show-on-hover">
+							</div>
+			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
+							</div>
+			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+				  <a class="quick-view" data-prod="2004" href="#quick-view">Quick View</a>			</div>
+					</div>
+
+		<div class="box-text box-text-products">
+			<div class="title-wrapper">		<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+			Uncategorized		</p>
+	<p class="name product-title woocommerce-loop-product__title"><a href="https://thuytranthuy.com/san-pham/kim-bam-duoi-lon/">Kìm b?m duôi l?n chính hãng ch?t lu?ng cao</a></p></div><div class="price-wrapper">
+</div>		</div>
+	</div>
+		</div>
+</div>
+
+<div class="product-small col has-hover product type-product post-1999 status-publish instock product_cat-dung-cu-chan-nuoi has-post-thumbnail shipping-taxable product-type-simple">
+	<div class="col-inner">
+	
+<div class="badge-container absolute left top z-1">
+</div>
+	<div class="product-small box ">
+		<div class="box-image">
+			<div class="image-fade_in_back">
+				<a href="https://thuytranthuy.com/san-pham/may-mai-nanh-heo-con/">
+					<img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2022/02/may-mai-nanh-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Máy mài nanh heo con" srcset="https://thuytranthuy.com/wp-content/uploads/2022/02/may-mai-nanh-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2022/02/may-mai-nanh-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2022/02/may-mai-nanh-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" />				</a>
+			</div>
+			<div class="image-tools is-small top right show-on-hover">
+							</div>
+			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
+							</div>
+			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+				  <a class="quick-view" data-prod="1999" href="#quick-view">Quick View</a>			</div>
+					</div>
+
+		<div class="box-text box-text-products">
+			<div class="title-wrapper">		<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+			D?ng c? chan nuôi		</p>
+	<p class="name product-title woocommerce-loop-product__title"><a href="https://thuytranthuy.com/san-pham/may-mai-nanh-heo-con/">Máy mài nanh heo con &#8211; không gây ch?y máu</a></p></div><div class="price-wrapper">
+</div>		</div>
+	</div>
+		</div>
+</div>
+
+<div class="product-small col has-hover product type-product post-2543 status-publish last instock product_cat-dung-cu-chan-nuoi has-post-thumbnail shipping-taxable product-type-simple">
+	<div class="col-inner">
+	
+<div class="badge-container absolute left top z-1">
+</div>
+	<div class="product-small box ">
+		<div class="box-image">
+			<div class="image-fade_in_back">
+				<a href="https://thuytranthuy.com/san-pham/xi-lanh-tu-dong/">
+					<img loading="lazy" decoding="async" width="300" height="300" src="https://thuytranthuy.com/wp-content/uploads/2024/12/xi-lanh-tu-dong-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Xi lanh t? d?ng" srcset="https://thuytranthuy.com/wp-content/uploads/2024/12/xi-lanh-tu-dong-300x300.jpg 300w, https://thuytranthuy.com/wp-content/uploads/2024/12/xi-lanh-tu-dong-280x280.jpg 280w, https://thuytranthuy.com/wp-content/uploads/2024/12/xi-lanh-tu-dong-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px" />				</a>
+			</div>
+			<div class="image-tools is-small top right show-on-hover">
+							</div>
+			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
+							</div>
+			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+				  <a class="quick-view" data-prod="2543" href="#quick-view">Quick View</a>			</div>
+					</div>
+
+		<div class="box-text box-text-products">
+			<div class="title-wrapper">		<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+			D?ng c? chan nuôi		</p>
+	<p class="name product-title woocommerce-loop-product__title"><a href="https://thuytranthuy.com/san-pham/xi-lanh-tu-dong/">Xi lanh t? d?ng</a></p></div><div class="price-wrapper">
+</div>		</div>
+	</div>
+		</div>
+</div>
+</div><!-- row --></div>
+
+<a data-animate="fadeInRight" href="/dung-cu-chan-nuoi/" target="_self" class="button success is-outline"  style="border-radius:99px;">
+    <span>Xem thêm</span>
+  <i class="icon-play" ></i></a>
+
+
+
+
+						
+												</div>
+		</div>
+	</div>
+</div>
+
+
+</main>
+
+<footer id="footer" class="footer-wrapper">
+
+	
+<!-- FOOTER 1 -->
+<div class="footer-widgets footer footer-1">
+		<div class="row large-columns-2 mb-0">
+	   		<div id="block-8" class="col pb-0 widget widget_block">
+<ul class="wp-block-list"><li><a href="https://thuytranthuy.com/bac-si-thu-y/" data-type="post" data-id="1681">? Bác si thú y - hành ngh? luong thi?n cung khó</a></li><li><a href="https://thuytranthuy.com/dich-ta-lon-chau-phi-bien-chung-moi/" data-type="URL">? Xu?t hi?n virus t? Châu Phi bi?n ch?ng m?i</a></li><li><a href="https://thuytranthuy.com/tham-day-chuyen-san-xuat-khang-the-gamma-globulin-cho-heo/" data-type="post" data-id="1879">? Tham dây chuy?n s?n xu?t kháng th? Gamma Globulin cho heo</a></li><li><a href="https://youtu.be/pq7LlkJfFRo" data-type="URL" data-id="https://youtu.be/pq7LlkJfFRo">? Tham dàn l?n b? b?nh hô h?p ph?c h?p</a></li><li><a href="https://youtu.be/Rj1rJK0tuus" data-type="URL" data-id="https://youtu.be/Rj1rJK0tuus">? Hu?ng d?n truy?n nu?c cho heo nái</a></li></ul>
+</div><div id="block-9" class="col pb-0 widget widget_block">
+<ul class="wp-block-list"><li><a href="https://youtu.be/0Cfc7SceO1I" data-type="URL" data-id="https://youtu.be/0Cfc7SceO1I">? C?nh báo: d?ch t? l?n châu phi bùng phát m?nh t?i các t?nh phía b?c</a></li><li><a href="https://youtu.be/hhg46PlPBpE" data-type="URL" data-id="https://youtu.be/hhg46PlPBpE">? D?ch b?nh bùng n? | Nguy co thi?t h?i kinh t? khi ch?n doán sai...</a></li><li><a href="https://youtu.be/caF_h01mtRQ" data-type="URL" data-id="https://youtu.be/caF_h01mtRQ">? Co h?i làm giàu cho nh?ng nhà chan nuôi t?n tâm v?i ngh?</a></li><li><a href="https://youtu.be/cpxMtuorX2k" data-type="URL" data-id="https://youtu.be/cpxMtuorX2k">? Xu?t hi?n virus b?nh tai xanh bi?n ch?ng Trung Qu?c...</a></li><li><a href="https://youtu.be/Mn8scu8AWhA" data-type="URL" data-id="https://youtu.be/Mn8scu8AWhA">? Hi?m h?a khôn lu?ng khi mua ph?i l?n gi?ng mang m?m b?nh</a></li></ul>
+</div>        
+		</div>
+</div>
+
+<!-- FOOTER 2 -->
+<div class="footer-widgets footer footer-2 dark">
+		<div class="row dark large-columns-2 mb-0">
+	   		
+		<div id="block_widget-2" class="col pb-0 widget block_widget">
+		<span class="widget-title">Bác si thú y Tr?n Thúy</span><div class="is-divider small"></div>
+		<p>Trang kênh chia s? ki?n th?c chan nuôi mi?n phí, d?ng hành cùng bà con, cùng nhau h?c h?i, cùng nhau làm giàu</p>
+<ul>
+<li>Ði?n tho?i liên h?: 0966725119</li>
+<li>Kênh Youtube: <a href="https://www.youtube.com/c/ThúyTr?nThúy">Thú y Tr?n Thúy</a></li>
+<li>Kênh Facebook: <a href="https://www.facebook.com/bacsithuytranthuy">Thú y Tr?n Thúy</a></li>
+</ul>
+<div class="social-icons follow-icons" ><a href="https://www.facebook.com/bacsithuytranthuy" target="_blank" data-label="Facebook"  rel="noopener noreferrer nofollow" class="icon primary button circle facebook tooltip" title="Follow on Facebook"><i class="icon-facebook" ></i></a><a href="tel:0966725119" target="_blank"  data-label="Phone"  rel="noopener noreferrer nofollow" class="icon primary button circle  phone tooltip" title="Call us"><i class="icon-phone" ></i></a><a href="https://www.youtube.com/c/ThúyTr?nThúy" target="_blank" rel="noopener noreferrer nofollow" data-label="YouTube" class="icon primary button circle  youtube tooltip" title="Follow on YouTube"><i class="icon-youtube" ></i></a></div>
+		</div>
+		<div id="block-12" class="col pb-0 widget widget_block"><p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.53357036186!2d105.79233331595445!3d21.447570978722148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31351fc357f9937f%3A0x503e725ed3552e68!2zVGjDuiBZIFRy4bqnbiBUaHXDvQ!5e0!3m2!1svi!2s!4v1627652252900!5m2!1svi!2s" width="1000" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p></div>        
+		</div>
+</div>
+
+
+
+<div class="absolute-footer dark medium-text-center text-center">
+  <div class="container clearfix">
+
+          <div class="footer-secondary pull-right">
+                <div class="payment-icons inline-block"><div class="payment-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 64 32">
+<path d="M10.781 7.688c-0.251-1.283-1.219-1.688-2.344-1.688h-8.376l-0.061 0.405c5.749 1.469 10.469 4.595 12.595 10.501l-1.813-9.219zM13.125 19.688l-0.531-2.781c-1.096-2.907-3.752-5.594-6.752-6.813l4.219 15.939h5.469l8.157-20.032h-5.501l-5.062 13.688zM27.72 26.061l3.248-20.061h-5.187l-3.251 20.061h5.189zM41.875 5.656c-5.125 0-8.717 2.72-8.749 6.624-0.032 2.877 2.563 4.469 4.531 5.439 2.032 0.968 2.688 1.624 2.688 2.499 0 1.344-1.624 1.939-3.093 1.939-2.093 0-3.219-0.251-4.875-1.032l-0.688-0.344-0.719 4.499c1.219 0.563 3.437 1.064 5.781 1.064 5.437 0.032 8.97-2.688 9.032-6.843 0-2.282-1.405-4-4.376-5.439-1.811-0.904-2.904-1.563-2.904-2.499 0-0.843 0.936-1.72 2.968-1.72 1.688-0.029 2.936 0.314 3.875 0.752l0.469 0.248 0.717-4.344c-1.032-0.406-2.656-0.844-4.656-0.844zM55.813 6c-1.251 0-2.189 0.376-2.72 1.688l-7.688 18.374h5.437c0.877-2.467 1.096-3 1.096-3 0.592 0 5.875 0 6.624 0 0 0 0.157 0.688 0.624 3h4.813l-4.187-20.061h-4zM53.405 18.938c0 0 0.437-1.157 2.064-5.594-0.032 0.032 0.437-1.157 0.688-1.907l0.374 1.72c0.968 4.781 1.189 5.781 1.189 5.781-0.813 0-3.283 0-4.315 0z"></path>
+</svg>
+</div><div class="payment-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 64 32">
+<path d="M35.255 12.078h-2.396c-0.229 0-0.444 0.114-0.572 0.303l-3.306 4.868-1.4-4.678c-0.088-0.292-0.358-0.493-0.663-0.493h-2.355c-0.284 0-0.485 0.28-0.393 0.548l2.638 7.745-2.481 3.501c-0.195 0.275 0.002 0.655 0.339 0.655h2.394c0.227 0 0.439-0.111 0.569-0.297l7.968-11.501c0.191-0.275-0.006-0.652-0.341-0.652zM19.237 16.718c-0.23 1.362-1.311 2.276-2.691 2.276-0.691 0-1.245-0.223-1.601-0.644-0.353-0.417-0.485-1.012-0.374-1.674 0.214-1.35 1.313-2.294 2.671-2.294 0.677 0 1.227 0.225 1.589 0.65 0.365 0.428 0.509 1.027 0.404 1.686zM22.559 12.078h-2.384c-0.204 0-0.378 0.148-0.41 0.351l-0.104 0.666-0.166-0.241c-0.517-0.749-1.667-1-2.817-1-2.634 0-4.883 1.996-5.321 4.796-0.228 1.396 0.095 2.731 0.888 3.662 0.727 0.856 1.765 1.212 3.002 1.212 2.123 0 3.3-1.363 3.3-1.363l-0.106 0.662c-0.040 0.252 0.155 0.479 0.41 0.479h2.147c0.341 0 0.63-0.247 0.684-0.584l1.289-8.161c0.040-0.251-0.155-0.479-0.41-0.479zM8.254 12.135c-0.272 1.787-1.636 1.787-2.957 1.787h-0.751l0.527-3.336c0.031-0.202 0.205-0.35 0.41-0.35h0.345c0.899 0 1.747 0 2.185 0.511 0.262 0.307 0.341 0.761 0.242 1.388zM7.68 7.473h-4.979c-0.341 0-0.63 0.248-0.684 0.584l-2.013 12.765c-0.040 0.252 0.155 0.479 0.41 0.479h2.378c0.34 0 0.63-0.248 0.683-0.584l0.543-3.444c0.053-0.337 0.343-0.584 0.683-0.584h1.575c3.279 0 5.172-1.587 5.666-4.732 0.223-1.375 0.009-2.456-0.635-3.212-0.707-0.832-1.962-1.272-3.628-1.272zM60.876 7.823l-2.043 12.998c-0.040 0.252 0.155 0.479 0.41 0.479h2.055c0.34 0 0.63-0.248 0.683-0.584l2.015-12.765c0.040-0.252-0.155-0.479-0.41-0.479h-2.299c-0.205 0.001-0.379 0.148-0.41 0.351zM54.744 16.718c-0.23 1.362-1.311 2.276-2.691 2.276-0.691 0-1.245-0.223-1.601-0.644-0.353-0.417-0.485-1.012-0.374-1.674 0.214-1.35 1.313-2.294 2.671-2.294 0.677 0 1.227 0.225 1.589 0.65 0.365 0.428 0.509 1.027 0.404 1.686zM58.066 12.078h-2.384c-0.204 0-0.378 0.148-0.41 0.351l-0.104 0.666-0.167-0.241c-0.516-0.749-1.667-1-2.816-1-2.634 0-4.883 1.996-5.321 4.796-0.228 1.396 0.095 2.731 0.888 3.662 0.727 0.856 1.765 1.212 3.002 1.212 2.123 0 3.3-1.363 3.3-1.363l-0.106 0.662c-0.040 0.252 0.155 0.479 0.41 0.479h2.147c0.341 0 0.63-0.247 0.684-0.584l1.289-8.161c0.040-0.252-0.156-0.479-0.41-0.479zM43.761 12.135c-0.272 1.787-1.636 1.787-2.957 1.787h-0.751l0.527-3.336c0.031-0.202 0.205-0.35 0.41-0.35h0.345c0.899 0 1.747 0 2.185 0.511 0.261 0.307 0.34 0.761 0.241 1.388zM43.187 7.473h-4.979c-0.341 0-0.63 0.248-0.684 0.584l-2.013 12.765c-0.040 0.252 0.156 0.479 0.41 0.479h2.554c0.238 0 0.441-0.173 0.478-0.408l0.572-3.619c0.053-0.337 0.343-0.584 0.683-0.584h1.575c3.279 0 5.172-1.587 5.666-4.732 0.223-1.375 0.009-2.456-0.635-3.212-0.707-0.832-1.962-1.272-3.627-1.272z"></path>
+</svg>
+</div><div class="payment-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 64 32">
+<path d="M7.114 14.656c-1.375-0.5-2.125-0.906-2.125-1.531 0-0.531 0.437-0.812 1.188-0.812 1.437 0 2.875 0.531 3.875 1.031l0.563-3.5c-0.781-0.375-2.406-1-4.656-1-1.594 0-2.906 0.406-3.844 1.188-1 0.812-1.5 2-1.5 3.406 0 2.563 1.563 3.688 4.125 4.594 1.625 0.594 2.188 1 2.188 1.656 0 0.625-0.531 0.969-1.5 0.969-1.188 0-3.156-0.594-4.437-1.343l-0.563 3.531c1.094 0.625 3.125 1.281 5.25 1.281 1.688 0 3.063-0.406 4.031-1.157 1.063-0.843 1.594-2.062 1.594-3.656-0.001-2.625-1.595-3.719-4.188-4.657zM21.114 9.125h-3v-4.219l-4.031 0.656-0.563 3.563-1.437 0.25-0.531 3.219h1.937v6.844c0 1.781 0.469 3 1.375 3.75 0.781 0.625 1.907 0.938 3.469 0.938 1.219 0 1.937-0.219 2.468-0.344v-3.688c-0.282 0.063-0.938 0.22-1.375 0.22-0.906 0-1.313-0.5-1.313-1.563v-6.156h2.406l0.595-3.469zM30.396 9.031c-0.313-0.062-0.594-0.093-0.876-0.093-1.312 0-2.374 0.687-2.781 1.937l-0.313-1.75h-4.093v14.719h4.687v-9.563c0.594-0.719 1.437-0.968 2.563-0.968 0.25 0 0.5 0 0.812 0.062v-4.344zM33.895 2.719c-1.375 0-2.468 1.094-2.468 2.469s1.094 2.5 2.468 2.5 2.469-1.124 2.469-2.5-1.094-2.469-2.469-2.469zM36.239 23.844v-14.719h-4.687v14.719h4.687zM49.583 10.468c-0.843-1.094-2-1.625-3.469-1.625-1.343 0-2.531 0.563-3.656 1.75l-0.25-1.469h-4.125v20.155l4.688-0.781v-4.719c0.719 0.219 1.469 0.344 2.125 0.344 1.157 0 2.876-0.313 4.188-1.75 1.281-1.375 1.907-3.5 1.907-6.313 0-2.499-0.469-4.405-1.407-5.593zM45.677 19.532c-0.375 0.687-0.969 1.094-1.625 1.094-0.468 0-0.906-0.093-1.281-0.281v-7c0.812-0.844 1.531-0.938 1.781-0.938 1.188 0 1.781 1.313 1.781 3.812 0.001 1.437-0.219 2.531-0.656 3.313zM62.927 10.843c-1.032-1.312-2.563-2-4.501-2-4 0-6.468 2.938-6.468 7.688 0 2.625 0.656 4.625 1.968 5.875 1.157 1.157 2.844 1.719 5.032 1.719 2 0 3.844-0.469 5-1.251l-0.501-3.219c-1.157 0.625-2.5 0.969-4 0.969-0.906 0-1.532-0.188-1.969-0.594-0.5-0.406-0.781-1.094-0.875-2.062h7.75c0.031-0.219 0.062-1.281 0.062-1.625 0.001-2.344-0.5-4.188-1.499-5.5zM56.583 15.094c0.125-2.093 0.687-3.062 1.75-3.062s1.625 1 1.687 3.062h-3.437z"></path>
+</svg>
+</div><div class="payment-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 64 32">
+<path d="M42.667-0c-4.099 0-7.836 1.543-10.667 4.077-2.831-2.534-6.568-4.077-10.667-4.077-8.836 0-16 7.163-16 16s7.164 16 16 16c4.099 0 7.835-1.543 10.667-4.077 2.831 2.534 6.568 4.077 10.667 4.077 8.837 0 16-7.163 16-16s-7.163-16-16-16zM11.934 19.828l0.924-5.809-2.112 5.809h-1.188v-5.809l-1.056 5.809h-1.584l1.32-7.657h2.376v4.753l1.716-4.753h2.508l-1.32 7.657h-1.585zM19.327 18.244c-0.088 0.528-0.178 0.924-0.264 1.188v0.396h-1.32v-0.66c-0.353 0.528-0.924 0.792-1.716 0.792-0.442 0-0.792-0.132-1.056-0.396-0.264-0.351-0.396-0.792-0.396-1.32 0-0.792 0.218-1.364 0.66-1.716 0.614-0.44 1.364-0.66 2.244-0.66h0.66v-0.396c0-0.351-0.353-0.528-1.056-0.528-0.442 0-1.012 0.088-1.716 0.264 0.086-0.351 0.175-0.792 0.264-1.32 0.703-0.264 1.32-0.396 1.848-0.396 1.496 0 2.244 0.616 2.244 1.848 0 0.353-0.046 0.749-0.132 1.188-0.089 0.616-0.179 1.188-0.264 1.716zM24.079 15.076c-0.264-0.086-0.66-0.132-1.188-0.132s-0.792 0.177-0.792 0.528c0 0.177 0.044 0.31 0.132 0.396l0.528 0.264c0.792 0.442 1.188 1.012 1.188 1.716 0 1.409-0.838 2.112-2.508 2.112-0.792 0-1.366-0.044-1.716-0.132 0.086-0.351 0.175-0.836 0.264-1.452 0.703 0.177 1.188 0.264 1.452 0.264 0.614 0 0.924-0.175 0.924-0.528 0-0.175-0.046-0.308-0.132-0.396-0.178-0.175-0.396-0.308-0.66-0.396-0.792-0.351-1.188-0.924-1.188-1.716 0-1.407 0.792-2.112 2.376-2.112 0.792 0 1.32 0.045 1.584 0.132l-0.265 1.451zM27.512 15.208h-0.924c0 0.442-0.046 0.838-0.132 1.188 0 0.088-0.022 0.264-0.066 0.528-0.046 0.264-0.112 0.442-0.198 0.528v0.528c0 0.353 0.175 0.528 0.528 0.528 0.175 0 0.35-0.044 0.528-0.132l-0.264 1.452c-0.264 0.088-0.66 0.132-1.188 0.132-0.881 0-1.32-0.44-1.32-1.32 0-0.528 0.086-1.099 0.264-1.716l0.66-4.225h1.584l-0.132 0.924h0.792l-0.132 1.585zM32.66 17.32h-3.3c0 0.442 0.086 0.749 0.264 0.924 0.264 0.264 0.66 0.396 1.188 0.396s1.1-0.175 1.716-0.528l-0.264 1.584c-0.442 0.177-1.012 0.264-1.716 0.264-1.848 0-2.772-0.924-2.772-2.773 0-1.142 0.264-2.024 0.792-2.64 0.528-0.703 1.188-1.056 1.98-1.056 0.703 0 1.274 0.22 1.716 0.66 0.35 0.353 0.528 0.881 0.528 1.584 0.001 0.617-0.046 1.145-0.132 1.585zM35.3 16.132c-0.264 0.97-0.484 2.201-0.66 3.697h-1.716l0.132-0.396c0.35-2.463 0.614-4.4 0.792-5.809h1.584l-0.132 0.924c0.264-0.44 0.528-0.703 0.792-0.792 0.264-0.264 0.528-0.308 0.792-0.132-0.088 0.088-0.31 0.706-0.66 1.848-0.353-0.086-0.661 0.132-0.925 0.66zM41.241 19.697c-0.353 0.177-0.838 0.264-1.452 0.264-0.881 0-1.584-0.308-2.112-0.924-0.528-0.528-0.792-1.32-0.792-2.376 0-1.32 0.35-2.42 1.056-3.3 0.614-0.879 1.496-1.32 2.64-1.32 0.44 0 1.056 0.132 1.848 0.396l-0.264 1.584c-0.528-0.264-1.012-0.396-1.452-0.396-0.707 0-1.235 0.264-1.584 0.792-0.353 0.442-0.528 1.144-0.528 2.112 0 0.616 0.132 1.056 0.396 1.32 0.264 0.353 0.614 0.528 1.056 0.528 0.44 0 0.924-0.132 1.452-0.396l-0.264 1.717zM47.115 15.868c-0.046 0.264-0.066 0.484-0.066 0.66-0.088 0.442-0.178 1.035-0.264 1.782-0.088 0.749-0.178 1.254-0.264 1.518h-1.32v-0.66c-0.353 0.528-0.924 0.792-1.716 0.792-0.442 0-0.792-0.132-1.056-0.396-0.264-0.351-0.396-0.792-0.396-1.32 0-0.792 0.218-1.364 0.66-1.716 0.614-0.44 1.32-0.66 2.112-0.66h0.66c0.086-0.086 0.132-0.218 0.132-0.396 0-0.351-0.353-0.528-1.056-0.528-0.442 0-1.012 0.088-1.716 0.264 0-0.351 0.086-0.792 0.264-1.32 0.703-0.264 1.32-0.396 1.848-0.396 1.496 0 2.245 0.616 2.245 1.848 0.001 0.089-0.021 0.264-0.065 0.529zM49.69 16.132c-0.178 0.528-0.396 1.762-0.66 3.697h-1.716l0.132-0.396c0.35-1.935 0.614-3.872 0.792-5.809h1.584c0 0.353-0.046 0.66-0.132 0.924 0.264-0.44 0.528-0.703 0.792-0.792 0.35-0.175 0.614-0.218 0.792-0.132-0.353 0.442-0.574 1.056-0.66 1.848-0.353-0.086-0.66 0.132-0.925 0.66zM54.178 19.828l0.132-0.528c-0.353 0.442-0.838 0.66-1.452 0.66-0.707 0-1.188-0.218-1.452-0.66-0.442-0.614-0.66-1.232-0.66-1.848 0-1.142 0.308-2.067 0.924-2.773 0.44-0.703 1.056-1.056 1.848-1.056 0.528 0 1.056 0.264 1.584 0.792l0.264-2.244h1.716l-1.32 7.657h-1.585zM16.159 17.98c0 0.442 0.175 0.66 0.528 0.66 0.35 0 0.614-0.132 0.792-0.396 0.264-0.264 0.396-0.66 0.396-1.188h-0.397c-0.881 0-1.32 0.31-1.32 0.924zM31.076 15.076c-0.088 0-0.178-0.043-0.264-0.132h-0.264c-0.528 0-0.881 0.353-1.056 1.056h1.848v-0.396l-0.132-0.264c-0.001-0.086-0.047-0.175-0.133-0.264zM43.617 17.98c0 0.442 0.175 0.66 0.528 0.66 0.35 0 0.614-0.132 0.792-0.396 0.264-0.264 0.396-0.66 0.396-1.188h-0.396c-0.881 0-1.32 0.31-1.32 0.924zM53.782 15.076c-0.353 0-0.66 0.22-0.924 0.66-0.178 0.264-0.264 0.749-0.264 1.452 0 0.792 0.264 1.188 0.792 1.188 0.35 0 0.66-0.175 0.924-0.528 0.264-0.351 0.396-0.879 0.396-1.584-0.001-0.792-0.311-1.188-0.925-1.188z"></path>
+</svg>
+</div><div class="payment-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 64 32">
+<path d="M13.043 8.356c-0.46 0-0.873 0.138-1.24 0.413s-0.662 0.681-0.885 1.217c-0.223 0.536-0.334 1.112-0.334 1.727 0 0.568 0.119 0.99 0.358 1.265s0.619 0.413 1.141 0.413c0.508 0 1.096-0.131 1.765-0.393v1.327c-0.693 0.262-1.389 0.393-2.089 0.393-0.884 0-1.572-0.254-2.063-0.763s-0.736-1.229-0.736-2.161c0-0.892 0.181-1.712 0.543-2.462s0.846-1.32 1.452-1.709 1.302-0.584 2.089-0.584c0.435 0 0.822 0.038 1.159 0.115s0.7 0.217 1.086 0.421l-0.616 1.276c-0.369-0.201-0.673-0.333-0.914-0.398s-0.478-0.097-0.715-0.097zM19.524 12.842h-2.47l-0.898 1.776h-1.671l3.999-7.491h1.948l0.767 7.491h-1.551l-0.125-1.776zM19.446 11.515l-0.136-1.786c-0.035-0.445-0.052-0.876-0.052-1.291v-0.184c-0.153 0.408-0.343 0.84-0.569 1.296l-0.982 1.965h1.739zM27.049 12.413c0 0.711-0.257 1.273-0.773 1.686s-1.213 0.62-2.094 0.62c-0.769 0-1.389-0.153-1.859-0.46v-1.398c0.672 0.367 1.295 0.551 1.869 0.551 0.39 0 0.694-0.072 0.914-0.217s0.329-0.343 0.329-0.595c0-0.147-0.024-0.275-0.070-0.385s-0.114-0.214-0.201-0.309c-0.087-0.095-0.303-0.269-0.648-0.52-0.481-0.337-0.818-0.67-1.013-1s-0.293-0.685-0.293-1.066c0-0.439 0.108-0.831 0.324-1.176s0.523-0.614 0.922-0.806 0.857-0.288 1.376-0.288c0.755 0 1.446 0.168 2.073 0.505l-0.569 1.189c-0.543-0.252-1.044-0.378-1.504-0.378-0.289 0-0.525 0.077-0.71 0.23s-0.276 0.355-0.276 0.607c0 0.207 0.058 0.389 0.172 0.543s0.372 0.36 0.773 0.615c0.421 0.272 0.736 0.572 0.945 0.9s0.313 0.712 0.313 1.151zM33.969 14.618h-1.597l0.7-3.22h-2.46l-0.7 3.22h-1.592l1.613-7.46h1.597l-0.632 2.924h2.459l0.632-2.924h1.592l-1.613 7.46zM46.319 9.831c0 0.963-0.172 1.824-0.517 2.585s-0.816 1.334-1.415 1.722c-0.598 0.388-1.288 0.582-2.067 0.582-0.891 0-1.587-0.251-2.086-0.753s-0.749-1.198-0.749-2.090c0-0.902 0.172-1.731 0.517-2.488s0.82-1.338 1.425-1.743c0.605-0.405 1.306-0.607 2.099-0.607 0.888 0 1.575 0.245 2.063 0.735s0.73 1.176 0.73 2.056zM43.395 8.356c-0.421 0-0.808 0.155-1.159 0.467s-0.627 0.739-0.828 1.283-0.3 1.135-0.3 1.771c0 0.5 0.116 0.877 0.348 1.133s0.558 0.383 0.979 0.383 0.805-0.148 1.151-0.444c0.346-0.296 0.617-0.714 0.812-1.255s0.292-1.148 0.292-1.822c0-0.483-0.113-0.856-0.339-1.12-0.227-0.264-0.546-0.396-0.957-0.396zM53.427 14.618h-1.786l-1.859-5.644h-0.031l-0.021 0.163c-0.111 0.735-0.227 1.391-0.344 1.97l-0.757 3.511h-1.436l1.613-7.46h1.864l1.775 5.496h0.021c0.042-0.259 0.109-0.628 0.203-1.107s0.407-1.942 0.94-4.388h1.43l-1.613 7.461zM13.296 20.185c0 0.98-0.177 1.832-0.532 2.556s-0.868 1.274-1.539 1.652c-0.672 0.379-1.464 0.568-2.376 0.568h-2.449l1.678-7.68h2.15c0.977 0 1.733 0.25 2.267 0.751s0.801 1.219 0.801 2.154zM8.925 23.615c0.536 0 1.003-0.133 1.401-0.399s0.71-0.657 0.934-1.174c0.225-0.517 0.337-1.108 0.337-1.773 0-0.54-0.131-0.95-0.394-1.232s-0.64-0.423-1.132-0.423h-0.624l-1.097 5.001h0.575zM18.64 24.96h-4.436l1.678-7.68h4.442l-0.293 1.334h-2.78l-0.364 1.686h2.59l-0.299 1.334h-2.59l-0.435 1.98h2.78l-0.293 1.345zM20.509 24.96l1.678-7.68h1.661l-1.39 6.335h2.78l-0.294 1.345h-4.436zM26.547 24.96l1.694-7.68h1.656l-1.694 7.68h-1.656zM33.021 23.389c0.282-0.774 0.481-1.27 0.597-1.487l2.346-4.623h1.716l-4.061 7.68h-1.814l-0.689-7.68h1.602l0.277 4.623c0.015 0.157 0.022 0.39 0.022 0.699-0.007 0.361-0.018 0.623-0.033 0.788h0.038zM41.678 24.96h-4.437l1.678-7.68h4.442l-0.293 1.334h-2.78l-0.364 1.686h2.59l-0.299 1.334h-2.59l-0.435 1.98h2.78l-0.293 1.345zM45.849 22.013l-0.646 2.947h-1.656l1.678-7.68h1.949c0.858 0 1.502 0.179 1.933 0.536s0.646 0.881 0.646 1.571c0 0.554-0.15 1.029-0.451 1.426s-0.733 0.692-1.298 0.885l1.417 3.263h-1.803l-1.124-2.947h-0.646zM46.137 20.689h0.424c0.474 0 0.843-0.1 1.108-0.3s0.396-0.504 0.396-0.914c0-0.287-0.086-0.502-0.258-0.646s-0.442-0.216-0.812-0.216h-0.402l-0.456 2.076zM53.712 20.39l2.031-3.11h1.857l-3.355 4.744-0.646 2.936h-1.645l0.646-2.936-1.281-4.744h1.694l0.7 3.11z"></path>
+</svg>
+</div></div>      </div>
+    
+    <div class="footer-primary pull-left">
+              <div class="menu-secondary-container"><ul id="menu-secondary" class="links footer-nav uppercase"><li id="menu-item-1041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-98 current_page_item menu-item-1041"><a href="https://thuytranthuy.com/" aria-current="page">Trang ch?</a></li>
+<li id="menu-item-683" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-683"><a href="https://thuytranthuy.com/chan-nuoi-lon/">Chan nuôi l?n</a></li>
+<li id="menu-item-1235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235"><a href="https://thuytranthuy.com/chan-nuoi-ga/">Chan nuôi gà</a></li>
+</ul></div>            <div class="copyright-footer">
+        Copyright 2025 © <strong>Thu y Tran Thuy</strong> <p> </p>
+<a href="//www.dmca.com/Protection/Status.aspx?ID=6de33b5e-c046-4bd4-801b-9d5f745fa513" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=6de33b5e-c046-4bd4-801b-9d5f745fa513"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script> <p> </p>      </div>
+          </div>
+  </div>
+</div>
+<a href="#top" class="back-to-top button icon invert plain fixed bottom z-1 is-outline hide-for-medium circle" id="top-link"><i class="icon-angle-up" ></i></a>
+
+</footer>
+
+</div>
+
+<div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
+	<div class="sidebar-menu no-scrollbar ">
+		<ul class="nav nav-sidebar nav-vertical nav-uppercase">
+			<li class="header-search-form search-form html relative has-icon">
+	<div class="header-search-form-wrapper">
+		<div class="searchform-wrapper ux-search-box relative form-flat is-normal"><form role="search" method="get" class="searchform" action="https://thuytranthuy.com/">
+	<div class="flex-row relative">
+						<div class="flex-col flex-grow">
+			<label class="screen-reader-text" for="woocommerce-product-search-field-1">Tìm ki?m:</label>
+			<input type="search" id="woocommerce-product-search-field-1" class="search-field mb-0" placeholder="Tìm ki?m&hellip;" value="" name="s" />
+			<input type="hidden" name="post_type" value="product" />
+					</div>
+		<div class="flex-col">
+			<button type="submit" value="Tìm ki?m" class="ux-search-submit submit-button secondary button icon mb-0">
+				<i class="icon-search" ></i>			</button>
+		</div>
+	</div>
+	<div class="live-search-results text-left z-top"></div>
+</form>
+</div>	</div>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-98 current_page_item menu-item-691"><a href="https://thuytranthuy.com/" aria-current="page">Trang ch?</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685"><a href="https://thuytranthuy.com/chan-nuoi-lon/">Chan nuôi l?n</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1234"><a href="https://thuytranthuy.com/chan-nuoi-ga/">Chan nuôi gà</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1579"><a href="https://thuytranthuy.com/thuoc-thu-y/">Thu?c thú y</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1582"><a href="https://thuytranthuy.com/che-pham-sinh-hoc-trong-chan-nuoi/">Ch? ph?m sinh h?c</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1615"><a href="https://thuytranthuy.com/dung-cu-chan-nuoi/">D?ng c? chan nuôi</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-585"><a href="#">B?n tin</a>
+<ul class="sub-menu nav-sidebar-ul children">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1699"><a href="https://thuytranthuy.com/category/tin-tuc/">Tin t?c</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1698"><a href="https://thuytranthuy.com/category/hoat-dong/">Ho?t d?ng</a></li>
+</ul>
+</li>
+<li class="account-item has-icon menu-item">
+<a href="https://thuytranthuy.com/my-account/"
+    class="nav-top-link nav-top-not-logged-in">
+    <span class="header-account-title">
+    Ðang nh?p  </span>
+</a>
+
+</li>
+<li class="header-newsletter-item has-icon">
+
+  <a href="#header-newsletter-signup" class="tooltip" title="Sign up for Newsletter">
+
+    <i class="icon-envelop"></i>
+    <span class="header-newsletter-title">
+      Newsletter    </span>
+  </a>
+
+</li><li class="html header-social-icons ml-0">
+	<div class="social-icons follow-icons" ><a href="http://url" target="_blank" data-label="Facebook"  rel="noopener noreferrer nofollow" class="icon plain facebook tooltip" title="Follow on Facebook"><i class="icon-facebook" ></i></a><a href="http://url" target="_blank" rel="noopener noreferrer nofollow" data-label="Instagram" class="icon plain  instagram tooltip" title="Follow on Instagram"><i class="icon-instagram" ></i></a><a href="http://url" target="_blank"  data-label="Twitter"  rel="noopener noreferrer nofollow" class="icon plain  twitter tooltip" title="Follow on Twitter"><i class="icon-twitter" ></i></a><a href="mailto:your@email" data-label="E-mail"  rel="nofollow" class="icon plain  email tooltip" title="Send us an email"><i class="icon-envelop" ></i></a></div></li>		</ul>
+	</div>
+</div>
+    <div id="login-form-popup" class="lightbox-content mfp-hide">
+            <div class="woocommerce-notices-wrapper"></div>
+<div class="account-container lightbox-inner">
+
+	
+			<div class="account-login-inner">
+
+				<h3 class="uppercase">Ðang nh?p</h3>
+
+				<form class="woocommerce-form woocommerce-form-login login" method="post">
+
+					
+					<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+						<label for="username">Tên tài kho?n ho?c d?a ch? email&nbsp;<span class="required">*</span></label>
+						<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="" />					</p>
+					<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+						<label for="password">M?t kh?u&nbsp;<span class="required">*</span></label>
+						<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
+					</p>
+
+					
+					<p class="form-row">
+						<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
+							<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span>Ghi nh? m?t kh?u</span>
+						</label>
+						<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="520bf7eb98" /><input type="hidden" name="_wp_http_referer" value="/" />						<button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Ðang nh?p">Ðang nh?p</button>
+					</p>
+					<p class="woocommerce-LostPassword lost_password">
+						<a href="https://thuytranthuy.com/my-account/lost-password/">Quên m?t kh?u?</a>
+					</p>
+
+					
+				</form>
+			</div>
+
+			
+</div>
+
+          </div>
+  	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script type="text/template" id="tmpl-variation-template">
+	<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
+	<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
+	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
+</script>
+<script type="text/template" id="tmpl-unavailable-variation-template">
+	<p>R?t ti?c, s?n ph?m này hi?n không t?n t?i. Hãy ch?n m?t phuong th?c k?t h?p khác.</p>
+</script>
+<script type="text/javascript" src="https://thuytranthuy.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/thuytranthuy.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://thuytranthuy.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.1" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://thuytranthuy.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70" id="jquery-blockui-js"></script>
+<script type="text/javascript" id="wc-add-to-cart-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Xem gi\u1ecf h\u00e0ng","cart_url":"https:\/\/thuytranthuy.com\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://thuytranthuy.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=5.4.2" id="wc-add-to-cart-js"></script>
+<script type="text/javascript" src="https://thuytranthuy.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4" id="js-cookie-js"></script>
+<script type="text/javascript" id="woocommerce-js-extra">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://thuytranthuy.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=5.4.2" id="woocommerce-js"></script>
+<script type="text/javascript" id="wc-cart-fragments-js-extra">
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_2757d880fdd011b6f122a85210ca4830","fragment_name":"wc_fragments_2757d880fdd011b6f122a85210ca4830","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://thuytranthuy.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=5.4.2" id="wc-cart-fragments-js"></script>
+<script type="text/javascript" src="https://thuytranthuy.com/wp-content/themes/flatsome/inc/extensions/flatsome-live-search/flatsome-live-search.js?ver=3.12.0" id="flatsome-live-search-js"></script>
+<script type="text/javascript" src="https://thuytranthuy.com/wp-includes/js/hoverIntent.min.js?ver=1.10.2" id="hoverIntent-js"></script>
+<script type="text/javascript" id="flatsome-js-js-extra">
+/* <![CDATA[ */
+var flatsomeVars = {"ajaxurl":"https:\/\/thuytranthuy.com\/wp-admin\/admin-ajax.php","rtl":"","sticky_height":"70","lightbox":{"close_markup":"<button title=\"%title%\" type=\"button\" class=\"mfp-close\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-x\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"><\/line><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"><\/line><\/svg><\/button>","close_btn_inside":false},"user":{"can_edit_pages":false},"i18n":{"mainMenu":"Main Menu"},"options":{"cookie_notice_version":"1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://thuytranthuy.com/wp-content/themes/flatsome/assets/js/flatsome.js?ver=3.12.0" id="flatsome-js-js"></script>
+<script type="text/javascript" src="https://thuytranthuy.com/wp-content/themes/flatsome/assets/js/woocommerce.js?ver=3.12.0" id="flatsome-theme-woocommerce-js-js"></script>
+<script type="text/javascript" src="https://thuytranthuy.com/wp-includes/js/underscore.min.js?ver=1.13.4" id="underscore-js"></script>
+<script type="text/javascript" id="wp-util-js-extra">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://thuytranthuy.com/wp-includes/js/wp-util.min.js?ver=6.6.1" id="wp-util-js"></script>
+<script type="text/javascript" id="wc-add-to-cart-variation-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_no_matching_variations_text":"R\u1ea5t ti\u1ebfc, kh\u00f4ng c\u00f3 s\u1ea3n ph\u1ea9m n\u00e0o ph\u00f9 h\u1ee3p v\u1edbi l\u1ef1a ch\u1ecdn c\u1ee7a b\u1ea1n. H\u00e3y ch\u1ecdn m\u1ed9t ph\u01b0\u01a1ng th\u1ee9c k\u1ebft h\u1ee3p kh\u00e1c.","i18n_make_a_selection_text":"Ch\u1ecdn c\u00e1c t\u00f9y ch\u1ecdn cho s\u1ea3n ph\u1ea9m tr\u01b0\u1edbc khi cho s\u1ea3n ph\u1ea9m v\u00e0o gi\u1ecf h\u00e0ng c\u1ee7a b\u1ea1n.","i18n_unavailable_text":"R\u1ea5t ti\u1ebfc, s\u1ea3n ph\u1ea9m n\u00e0y hi\u1ec7n kh\u00f4ng t\u1ed3n t\u1ea1i. H\u00e3y ch\u1ecdn m\u1ed9t ph\u01b0\u01a1ng th\u1ee9c k\u1ebft h\u1ee3p kh\u00e1c."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://thuytranthuy.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js?ver=5.4.2" id="wc-add-to-cart-variation-js"></script>
 
 </body>
 </html>
+
+<!-- Page generated by LiteSpeed Cache 3.6.4 on 2025-03-20 11:06:23 -->
